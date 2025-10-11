@@ -159,6 +159,7 @@ def save_discovered_links(all_links):
         'links': sorted(list(all_links))
     }
     
+    
     with open('discovered_news_links.json', 'w', encoding='utf-8') as f:
         json.dump(links_data, f, indent=2, ensure_ascii=False)
     
