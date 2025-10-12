@@ -40,7 +40,7 @@ Comercializamos la variedad flame a mercados en Europa y Estados Unidos, con nue
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#7b081e091c121455091a0f0f143b161a150e1e17120f1a55181416550b1e40081a171e083b161a150e1e17120f1a55181416550b1e44280e19111e180f463814150f1a180f145e494b1814161e0918121a175e494b2e0d1a) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
+[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#7d0e180f1a1412530f1c0909123d101c1308181114091c531e1210530d18460e1c11180e3d101c1308181114091c531e1210530d18422e081f17181e09403e1213091c1e0912584f4d1e1210180f1e141c11584f4d280b1c) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
 
 La sugraone es una variedad de uva de mesa, sin semilla, de bayas de color verde claro. Su sabor es lígero y dulce, de textura crujiente.
 
@@ -62,7 +62,7 @@ Comercializamos la variedad Sugraone a mercados en Europa y Estados Unidos, con 
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#4d3e283f2a2422633f2c3939220d202c2338282124392c632e2220633d28763e2c21283e0d202c2338282124392c632e2220633d28721e382f27282e39700e2223392c2e3922687f7d2e2220283f2e242c21687f7d183b2c) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
+[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#82f1e7f0e5ebedacf0e3f6f6edc2efe3ecf7e7eeebf6e3ace1edefacf2e7b9f1e3eee7f1c2efe3ecf7e7eeebf6e3ace1edefacf2e7bdd1f7e0e8e7e1f6bfc1edecf6e3e1f6eda7b0b2e1edefe7f0e1ebe3eea7b0b2d7f4e3) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
 
 La Red Globe es una variedad de uva de mesa, con semilla, de bayas grandes de color rojo intenso y muy jugosas. Su sabor es afrutado.
 
@@ -84,7 +84,7 @@ Comercializamos la variedad Red Globe a mercados en Europa y Estados Unidos, con
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#5122342336383e7f233025253e113c303f24343d3825307f323e3c7f21346a22303d3422113c303f24343d3825307f323e3c7f21346e0224333b3432256c123e3f253032253e746361323e3c34233238303d746361042730) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
+[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#9deef8effaf4f2b3effce9e9f2ddf0fcf3e8f8f1f4e9fcb3fef2f0b3edf8a6eefcf1f8eeddf0fcf3e8f8f1f4e9fcb3fef2f0b3edf8a2cee8fff7f8fee9a0def2f3e9fcfee9f2b8afadfef2f0f8effef4fcf1b8afadc8ebfc) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
 
 La Crimson es una variedad de uva de mesa, sin semilla, de bayas alargadas de color rojo, piel firme y crujiente y pulpa jugosa. Su sabor es dulce, es baja en calorías y rica en antioxidantes y vitamina C. Se pueden consumir frescas como un aperitivo saludable o en ensaladas de frutas y platos de queso.
 
@@ -106,7 +106,7 @@ Comercializamos la variedad Crimson a mercados en Europa y Estados Unidos, con n
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#fa899f889d9395d4889b8e8e95ba979b948f9f96938e9bd4999597d48a9fc1899b969f89ba979b948f9f96938e9bd4999597d48a9fc5a98f98909f998ec7b995948e9b998e95dfc8ca9995979f8899939b96dfc8caaf8c9b) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
+[![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_comercial_01.jpg)](/cdn-cgi/l/email-protection#06756374616f69287467727269466b676873636a6f72672865696b2876633d75676a6375466b676873636a6f72672865696b287663395573646c6365723b456968726765726923343665696b6374656f676a233436537067) [![](https://www.manuelita.com//wp-content/uploads/2016/10/Boton_certificaciones_01.jpg)](https://www.manuelita.com//wp-content/uploads/2017/06/Certificacion_Frutas_01.png)
 
 [ ![Compartir en Facebook](https://www.manuelita.com/wp-content/themes/manuelita/images/icons/icon_facebook_white.svg) ](https://www.facebook.com/sharer/sharer.php?u=https://www.manuelita.com/manuelita-productos/frutas-y-hortalizas/)[ ![Compartir en Twitter](https://www.manuelita.com/wp-content/themes/manuelita/images/icons/icon_twitter_white.svg) ](http://twitter.com/share?url=https://www.manuelita.com/manuelita-productos/frutas-y-hortalizas/&text= Frutas y hortalizas)
 

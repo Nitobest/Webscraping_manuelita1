@@ -1,0 +1,9 @@
+[project]
+name = "webscraping-manuelita"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [ "requests>=2.31",
+  "beautifulsoup4>=4.12",
+  "html2text>=2020.1.16"]
