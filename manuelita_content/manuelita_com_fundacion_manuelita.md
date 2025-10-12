@@ -32,7 +32,7 @@ Se desarrolla en la Institución Educativa Antonio Lizarazo, sedes Central y Ros
 * Premio Responsabilidad Social Empresarial BRITCHAM LAZOS de la **Cámara de Comercio Colombo****Británica** , en la categoría Mejor Programa Gestión Grupos de Interés.
 * **Lápiz Dorado 2016** de la Secretaria de Educación de Palmira en reconocimiento a la Fundación Manuelita por el liderazgo y compromiso con el mejoramiento de la Educación, que se evidencia en el desarrollo del programa Educar Uno a Uno.
 
-## [Contáctanos!](/cdn-cgi/l/email-protection#06616a69746f67286b6362636a6a6f68466b676873636a6f72672865696b)
+## [Contáctanos!](/cdn-cgi/l/email-protection#8deae1e2ffe4eca3e0e8e9e8e1e1e4e3cde0ece3f8e8e1e4f9eca3eee2e0)
 
 **[Información Régimen Tributario Especial](https://www.manuelita.com/informacion-regimen-tributario-especial) [Política de Tratamiento de Datos Personales](https://www.manuelita.com/wp-content/uploads/2018/09/Política-datos-personales-FMANUELITA.pdf)**
 

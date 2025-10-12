@@ -50,7 +50,7 @@ Producimos glicerina refinada a partir de nuestros cultivos de aceite de palma, 
 
 * * *
 
-[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar Glicerina refinada](/cdn-cgi/l/email-protection#ddbcb1b8b7bcb3b9afb2f3bebcb3bcb1b8ae9db0bcb3a8b8b1b4a9bcf3beb2b0)
+[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar Glicerina refinada](/cdn-cgi/l/email-protection#37565b525d565953455819545659565b5244775a565942525b5e43561954585a)
 
 Por su alto contenido en grasas, proteínas y fibra, la torta de palmiste es utilizada en la elaboración de alimentos concentrados y purinas para animales, especialmente para el ganado bovino al ser una valiosa fuente de energía.
 
@@ -58,7 +58,7 @@ La torta de palmiste producida por Manuelita Aceites se obtiene a partir del pro
 
 * * *
 
-[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar Torta de Palmiste](/cdn-cgi/l/email-protection#741518111e151a10061b5a17151a151811073419151a0111181d00155a171b194b2701161e11170049371b1a001517001b514544171b191106171d1518514644201b060015514644241518191d070011)
+[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar Torta de Palmiste](/cdn-cgi/l/email-protection#4d2c2128272c23293f22632e2c232c21283e0d202c2338282124392c632e2220721e382f27282e39700e2223392c2e3922687c7d2e2220283f2e242c21687f7d19223f392c687f7d1d2c2120243e3928)
 
 [ Certificaciones](https://www.manuelita.com/wp-content/uploads/2017/06/Certificacion_Biodiesel_01.png)
 La torta de palmiste de Manuelita está certificada bajo los estándares de sostenibilidad RSPO
@@ -73,7 +73,7 @@ En Manuelita Aceites y Energía es producida con base en los principios y criter
 
 * * *
 
-[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar aceite de Palmiste](/cdn-cgi/l/email-protection#bbdad7ded1dad5dfc9d495d8dad5dad7dec8fbd6dad5ceded7d2cfda95d8d4d684e8ced9d1ded8cf86f8d4d5cfdad8cfd49e898bd8d4d6dec9d8d2dad79e898bfad8ded2cfde9e898bebdad7d6d2c8cfde)[ Certificaciones](https://www.manuelita.com/wp-content/uploads/2017/06/Certificacion_Biodiesel_01.png)
+[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar aceite de Palmiste](/cdn-cgi/l/email-protection#7a1b161f101b141e081554191b141b161f093a171b140f1f16130e1b5419151745290f18101f190e473915140e1b190e155f484a1915171f0819131b165f484a3b191f130e1f5f484a2a1b161713090e1f)[ Certificaciones](https://www.manuelita.com/wp-content/uploads/2017/06/Certificacion_Biodiesel_01.png)
 
 [ ![Compartir en Facebook](https://www.manuelita.com/wp-content/themes/manuelita/images/icons/icon_facebook_white.svg) ](https://www.facebook.com/sharer/sharer.php?u=https://www.manuelita.com/manuelita-productos/derivados-de-palma/)[ ![Compartir en Twitter](https://www.manuelita.com/wp-content/themes/manuelita/images/icons/icon_twitter_white.svg) ](http://twitter.com/share?url=https://www.manuelita.com/manuelita-productos/derivados-de-palma/&text= Derivados de palma)
 

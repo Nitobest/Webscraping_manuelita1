@@ -28,7 +28,7 @@ Contamos con el respaldo de los agricultores que han comprobado su eficacia en: 
 
 ![Biorganik_04](/wp-content/uploads/2024/04/biorganik3.svg)Es ideal para los cultivos que requieren potasio.
 
-[![](/wp-content/uploads/2024/04/facebook.svg) Síguenos para conocer más](https://www.facebook.com/Biorganik.FuerzaNatural/)[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar Biorkanik](/cdn-cgi/l/email-protection#492a283b25263a28272d3b2c3a673d263b3b2c3a092428273c2c25203d28672a2624)
+[![](/wp-content/uploads/2024/04/facebook.svg) Síguenos para conocer más](https://www.facebook.com/Biorganik.FuerzaNatural/)[![](/wp-content/uploads/2024/04/comprar.svg) Quiero comprar Biorkanik](/cdn-cgi/l/email-protection#24474556484b57454a405641570a504b565641576449454a5141484d50450a474b49)
 
 Es resultado del agotamiento de mieles en el proceso de fabricación del azúcar.
 
