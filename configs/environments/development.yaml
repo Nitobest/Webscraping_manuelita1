@@ -1,0 +1,54 @@
+# Development Environment Configuration
+# Use this configuration for local development and testing
+
+scraping:
+  targets:
+    corporate_urls:
+      - "https://www.manuelita.com"
+      - "https://www.manuelita.com/perfil-corporativo/"
+      - "https://www.manuelita.com/historia/"
+      # Add more URLs as needed for development
+    
+    news_base_urls:
+      - "https://www.manuelita.com/manuelita-noticias"
+      - "https://www.manuelita.com/manuelita-noticias/page/2"
+    
+    excluded_patterns:
+      - "*/page/*"
+      - "*/tag/*"
+      - "*/author/*"
+  
+  settings:
+    request_delay: 2.0  # Conservative delay for development
+    timeout: 30
+    max_retries: 3
+    user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  
+  output:
+    base_directory: "data/raw"
+    file_format: "markdown"
+    include_metadata: true
+
+cleaning:
+  patterns:
+    remove_navigation: true
+    remove_social_media: true
+    preserve_dates: true
+    custom_patterns:
+      - name: "wordpress_toolbar"
+        pattern: "Ir a la barra de herramientas.*?Buscar"
+        replacement: ""
+      - name: "line_numbers"
+        pattern: "^\\d+\\|"
+        replacement: ""
+
+logging:
+  level: "DEBUG"
+  format: "text"
+  file_path: "logs/development.log"
+  console_output: true
+
+monitoring:
+  metrics_enabled: true
+  error_tracking: true
+  performance_tracking: true

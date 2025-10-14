@@ -1,0 +1,102 @@
+# Configuration Schema for Manuelita Scraper Pipeline
+# This file defines the structure and validation rules for configuration files
+
+scraping:
+  type: object
+  required: [targets, settings, output]
+  properties:
+    targets:
+      type: object
+      properties:
+        corporate_urls:
+          type: array
+          items:
+            type: string
+            format: uri
+        news_base_urls:
+          type: array
+          items:
+            type: string
+            format: uri
+        excluded_patterns:
+          type: array
+          items:
+            type: string
+    
+    settings:
+      type: object
+      properties:
+        request_delay:
+          type: number
+          minimum: 0.5
+          maximum: 10
+        timeout:
+          type: number
+          minimum: 5
+          maximum: 60
+        max_retries:
+          type: integer
+          minimum: 0
+          maximum: 5
+        user_agent:
+          type: string
+          minLength: 10
+    
+    output:
+      type: object
+      properties:
+        base_directory:
+          type: string
+        file_format:
+          type: string
+          enum: [markdown, html, json]
+        include_metadata:
+          type: boolean
+
+cleaning:
+  type: object
+  properties:
+    patterns:
+      type: object
+      properties:
+        remove_navigation:
+          type: boolean
+        remove_social_media:
+          type: boolean
+        preserve_dates:
+          type: boolean
+        custom_patterns:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              pattern:
+                type: string
+              replacement:
+                type: string
+
+logging:
+  type: object
+  properties:
+    level:
+      type: string
+      enum: [DEBUG, INFO, WARNING, ERROR, CRITICAL]
+    format:
+      type: string
+      enum: [json, text]
+    file_path:
+      type: string
+    console_output:
+      type: boolean
+
+monitoring:
+  type: object
+  properties:
+    metrics_enabled:
+      type: boolean
+    error_tracking:
+      type: boolean
+    performance_tracking:
+      type: boolean
