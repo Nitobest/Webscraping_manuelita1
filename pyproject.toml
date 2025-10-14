@@ -1,9 +1,40 @@
 [project]
-name = "webscraping-manuelita"
-version = "0.1.0"
-description = "Add your description here"
+name = "manuelita-scraper"
+version = "0.2.0"
+description = "AI-powered web scraping pipeline for Manuelita corporate content extraction"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = [ "requests>=2.31",
-  "beautifulsoup4>=4.12",
-  "html2text>=2020.1.16"]
+dependencies = [
+  # Core scraping
+  "requests>=2.31.0",
+  "beautifulsoup4>=4.12.0",
+  "html2text>=2020.1.16",
+  # Configuration and data validation
+  "pyyaml>=6.0",
+  "pydantic>=2.0.0",
+  # Logging and monitoring
+  "structlog>=23.0.0",
+  # Data processing
+  "pandas>=2.0.0",
+  # CLI interface
+  "click>=8.0.0",
+  # Type checking
+  "typing-extensions>=4.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0.0",
+  "pytest-cov>=4.0.0",
+  "black>=23.0.0",
+  "flake8>=6.0.0",
+  "mypy>=1.0.0",
+  "pre-commit>=3.0.0"
+]
+
+[project.scripts]
+manuelita-scraper = "manuelita_scraper.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

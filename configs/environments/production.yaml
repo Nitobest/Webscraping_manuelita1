@@ -1,0 +1,89 @@
+# Production Environment Configuration
+# Use this configuration for production scraping runs
+
+scraping:
+  targets:
+    corporate_urls:
+      - "https://www.manuelita.com"
+      - "https://www.manuelita.com/perfil-corporativo/"
+      - "https://www.manuelita.com/historia/"
+      - "https://www.manuelita.com/gobierno-corporativo/"
+      - "https://www.manuelita.com/plataformas-de-negocios/"
+      - "https://www.manuelita.com/estrategia-corporativa/"
+      - "https://www.manuelita.com/linea-etica/"
+      - "https://www.manuelita.com/proveedores-cana/"
+      - "https://www.manuelita.com/azucar/"
+      - "https://www.manuelitaindustria.com/"
+      - "https://www.manuelita.com/manuelita-productos/energias-renovables/"
+      - "https://www.manuelita.com/manuelita-productos/derivados-de-la-cana/"
+      - "https://www.manuelita.com/manuelita-productos/derivados-de-palma/"
+      - "https://www.manuelita.com/manuelita-productos/frutas-y-hortalizas/"
+      - "https://www.manuelita.com/manuelita-productos/mejillones/"
+      - "https://www.manuelita.com/manuelita-productos/camarones/"
+      - "https://www.manuelita.com/sostenibilidad/"
+      - "https://www.manuelita.com/talento/"
+      - "https://www.manuelita.com/manuelita-noticias/"
+      - "https://www.manuelita.com/blog/"
+      - "https://www.manuelita.com/manuelita-160/"
+      - "https://www.manuelita.com/contacto/"
+    
+    news_base_urls:
+      - "https://www.manuelita.com/manuelita-noticias"
+      - "https://www.manuelita.com/manuelita-noticias/page/2"
+      - "https://www.manuelita.com/manuelita-noticias/page/3"
+      - "https://www.manuelita.com/manuelita-noticias/page/4"
+      - "https://www.manuelita.com/manuelita-noticias/page/5"
+      - "https://www.manuelita.com/manuelita-noticias/page/6"
+      - "https://www.manuelita.com/manuelita-noticias/page/7"
+      - "https://www.manuelita.com/manuelita-noticias/page/8"
+      - "https://www.manuelita.com/manuelita-noticias/page/9"
+      - "https://www.manuelita.com/manuelita-noticias/page/10"
+      - "https://www.manuelita.com/manuelita-noticias/page/11"
+      - "https://www.manuelita.com/manuelita-noticias/page/12"
+      - "https://www.manuelita.com/manuelita-noticias/page/13"
+      - "https://fundacionmanuelita.org/noticias/"
+      - "https://fundacionmanuelita.org/"
+    
+    excluded_patterns:
+      - "*/tag/*"
+      - "*/author/*"
+      - "*/category/*"
+      - "*/feed/*"
+  
+  settings:
+    request_delay: 2.0  # Respectful delay for production
+    timeout: 60
+    max_retries: 3
+    user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  
+  output:
+    base_directory: "data/raw"
+    file_format: "markdown"
+    include_metadata: true
+
+cleaning:
+  patterns:
+    remove_navigation: true
+    remove_social_media: true
+    preserve_dates: true
+    custom_patterns:
+      - name: "wordpress_toolbar"
+        pattern: "Ir a la barra de herramientas.*?Buscar"
+        replacement: ""
+      - name: "line_numbers"
+        pattern: "^\\d+\\|"
+        replacement: ""
+      - name: "social_sharing"
+        pattern: "(Compartir en (Facebook|Twitter|Linkedin)|Ir a Instagram)[^\\n]*"
+        replacement: ""
+
+logging:
+  level: "INFO"
+  format: "json"
+  file_path: "logs/production.log"
+  console_output: false
+
+monitoring:
+  metrics_enabled: true
+  error_tracking: true
+  performance_tracking: true

@@ -1,0 +1,8 @@
+2025-10-13 20:05:34,307 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.manuelita.com:443
+2025-10-13 20:05:35,505 - urllib3.connectionpool - DEBUG - https://www.manuelita.com:443 "GET / HTTP/1.1" 200 None
+2025-10-13 20:05:38,463 - urllib3.connectionpool - DEBUG - https://www.manuelita.com:443 "GET /perfil-corporativo/ HTTP/1.1" 200 None
+2025-10-13 20:05:41,272 - urllib3.connectionpool - DEBUG - https://www.manuelita.com:443 "GET /historia/ HTTP/1.1" 200 None
+2025-10-13 20:31:20,122 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.manuelita.com:443
+2025-10-13 20:31:21,686 - urllib3.connectionpool - DEBUG - https://www.manuelita.com:443 "GET / HTTP/1.1" 200 None
+2025-10-13 20:31:24,609 - urllib3.connectionpool - DEBUG - https://www.manuelita.com:443 "GET /perfil-corporativo/ HTTP/1.1" 200 None
+2025-10-13 20:31:27,364 - urllib3.connectionpool - DEBUG - https://www.manuelita.com:443 "GET /historia/ HTTP/1.1" 200 None
