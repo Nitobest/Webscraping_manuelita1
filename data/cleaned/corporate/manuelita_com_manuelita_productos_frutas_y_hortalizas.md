@@ -1,3 +1,5 @@
+**Title:** Frutas y hortalizas - Manuelita
+
 # Frutas y hortalizas
 
 Manuelita ofrece uva de mesa de alta calidad, en variedades flame, sugraone, crimson y red globe, a los importadores más exigentes, principalmente en Estados Unidos, Europa, y Asia. Nuestras uvas se producen en Ica, al sur del Perú, región que cuenta con ventajas comparativas por condiciones privilegiadas agro climáticas y de contra estación con los productores del hemisferio norte.
@@ -30,7 +32,7 @@ Comercializamos la variedad flame a mercados en Europa y Estados Unidos, con nue
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[](/cdn-cgi/l/email-protection#7b081e091c121455091a0f0f143b161a150e1e17120f1a55181416550b1e40081a171e083b161a150e1e17120f1a55181416550b1e44280e19111e180f463814150f1a180f145e494b1814161e0918121a175e494b2e0d1a) []()
+[](/cdn-cgi/l/email-protection#94e7f1e6f3fdfbbae6f5e0e0fbd4f9f5fae1f1f8fde0f5baf7fbf9bae4f1afe7f5f8f1e7d4f9f5fae1f1f8fde0f5baf7fbf9bae4f1abc7e1f6fef1f7e0a9d7fbfae0f5f7e0fbb1a6a4f7fbf9f1e6f7fdf5f8b1a6a4c1e2f5) []()
 
 La sugraone es una variedad de uva de mesa, sin semilla, de bayas de color verde claro. Su sabor es lígero y dulce, de textura crujiente.
 
@@ -50,7 +52,7 @@ Comercializamos la variedad Sugraone a mercados en Europa y Estados Unidos, con 
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[](/cdn-cgi/l/email-protection#4d3e283f2a2422633f2c3939220d202c2338282124392c632e2220633d28763e2c21283e0d202c2338282124392c632e2220633d28721e382f27282e39700e2223392c2e3922687f7d2e2220283f2e242c21687f7d183b2c) []()
+[](/cdn-cgi/l/email-protection#a4d7c1d6c3cdcb8ad6c5d0d0cbe4c9c5cad1c1c8cdd0c58ac7cbc98ad4c19fd7c5c8c1d7e4c9c5cad1c1c8cdd0c58ac7cbc98ad4c19bf7d1c6cec1c7d099e7cbcad0c5c7d0cb819694c7cbc9c1d6c7cdc5c8819694f1d2c5) []()
 
 La Red Globe es una variedad de uva de mesa, con semilla, de bayas grandes de color rojo intenso y muy jugosas. Su sabor es afrutado.
 
@@ -70,7 +72,7 @@ Comercializamos la variedad Red Globe a mercados en Europa y Estados Unidos, con
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[](/cdn-cgi/l/email-protection#5122342336383e7f233025253e113c303f24343d3825307f323e3c7f21346a22303d3422113c303f24343d3825307f323e3c7f21346e0224333b3432256c123e3f253032253e746361323e3c34233238303d746361042730) []()
+[](/cdn-cgi/l/email-protection#3043554257595f1e425144445f705d515e45555c5944511e535f5d1e40550b43515c5543705d515e45555c5944511e535f5d1e40550f6345525a5553440d735f5e445153445f150200535f5d55425359515c150200654651) []()
 
 La Crimson es una variedad de uva de mesa, sin semilla, de bayas alargadas de color rojo, piel firme y crujiente y pulpa jugosa. Su sabor es dulce, es baja en calorías y rica en antioxidantes y vitamina C. Se pueden consumir frescas como un aperitivo saludable o en ensaladas de frutas y platos de queso.
 
@@ -90,4 +92,4 @@ Comercializamos la variedad Crimson a mercados en Europa y Estados Unidos, con n
 
 * Caja de 9.1 Kg - Incluye 4 Clamshells de 5Lb por caja
 
-[](/cdn-cgi/l/email-protection#fa899f889d9395d4889b8e8e95ba979b948f9f96938e9bd4999597d48a9fc1899b969f89ba979b948f9f96938e9bd4999597d48a9fc5a98f98909f998ec7b995948e9b998e95dfc8ca9995979f8899939b96dfc8caaf8c9b) []()
+[](/cdn-cgi/l/email-protection#e192849386888ecf938095958ea18c808f94848d889580cf828e8ccf9184da92808d8492a18c808f94848d889580cf828e8ccf9184deb294838b848295dca28e8f958082958ec4d3d1828e8c84938288808dc4d3d1b49780) []()

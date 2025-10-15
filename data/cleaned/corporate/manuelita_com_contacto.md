@@ -1,3 +1,7 @@
+**Title:** Ponte en Contacto con nosotros | Manuelita
+
+**Description:** Existen diferentes formas de contactarnos, dependiendo de sus necesidades. Por favor seleccione la opción que más se ajusta a su caso.
+
 # ¿Cómo te podemos ayudar?
 
 Existen diferentes formas de contactarnos, dependiendo de sus necesidades. Por favor seleccione la opción que más se ajusta a su caso.

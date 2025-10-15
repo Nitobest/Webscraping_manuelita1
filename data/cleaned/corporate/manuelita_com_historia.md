@@ -1,3 +1,7 @@
+**Title:** Conoce la historia de Manuelita 160 años
+
+**Description:** Descubre la historia de Manuelita, su origen en Palmira y su legado en agroindustria, y sostenibilidad en América Latina por mas de 160 años.
+
 1864
 
 ## Nace Manuelita

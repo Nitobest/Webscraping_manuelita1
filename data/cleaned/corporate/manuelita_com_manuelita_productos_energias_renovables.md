@@ -1,3 +1,5 @@
+**Title:** Energías renovables - Manuelita
+
 # Energías renovables
 
 Manuelita ofrece biodiésel y bioetanol carburante, biocombustibles que se comercializan a distribuidores nacionales de combustibles dentro del plan de mezclas del Gobierno de Colombia con el fin de oxigenar la gasolina y diésel proveniente de combustibles fósiles. Igualmente, comercializamos excedentes de energía, como parte de nuestro enfoque en ofrecer energías limpias provenientes de fuentes renovables y así aportar a la seguridad energética del país y a la meta de reducción de emisiones de Gases de Efecto Invernadero del 20% para el 2030.

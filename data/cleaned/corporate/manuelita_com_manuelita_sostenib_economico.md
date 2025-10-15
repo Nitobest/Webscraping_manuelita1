@@ -1,3 +1,7 @@
+**Title:** Modelo de Sostenibilidad Económica | Manuelita
+
+**Description:** Manuelita crea valor económico para sus accionistas, colaboradores, clientes, proveedores y las regiones donde opera.
+
 Regresar a Sostenibilidad
 
 # Sostenibilidad Económica

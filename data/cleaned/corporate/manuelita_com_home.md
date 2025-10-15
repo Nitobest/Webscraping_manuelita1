@@ -1,3 +1,7 @@
+**Title:** Manuelita | Cultivamos cosas buenas que generan progreso y bienestar
+
+**Description:** Generamos progreso y bienestar con empresas y productos ejemplares a partir del aprovechamiento racional y sostenible de los recursos naturales.
+
 ### Cultivamos cosas buenas que generan progreso y bienestar
 
 ### Trabajamos con conciencia para cosechar los frutos de un mejor mañana

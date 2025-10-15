@@ -1,3 +1,5 @@
+**Title:** Azúcar Industrial - Manuelita
+
 # Azúcar Industrial
 
 Manuelita ofrece un portafolio de azúcar y derivados de valor agregado a las industrias más exigentes de Colombia, Perú y otros países vecinos, en los sectores alimenticio y bebidas, químico y farmacéutico, a través de un modelo de atención diferenciado que responde a sus requerimientos de producto, uso y entrega, a costo total competitivo. Igualmente, suministra azúcar de marca reconocida a los consumidores en el mercado colombiano a través de cadenas, mayoristas y distribuidores.

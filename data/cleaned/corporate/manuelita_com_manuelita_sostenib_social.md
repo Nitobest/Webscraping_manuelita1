@@ -1,3 +1,7 @@
+**Title:** Modelo de Sostenibilidad  | Manuelita
+
+**Description:** Para Manuelita es una prioridad contribuir al bienestar de nuestros colaboradores, sus familias y las comunidades vecinas.
+
 Regresar a Sostenibilidad
 
 # Sostenibilidad

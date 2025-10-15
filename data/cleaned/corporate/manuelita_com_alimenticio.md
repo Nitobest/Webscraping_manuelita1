@@ -1,3 +1,7 @@
+**Title:** Productos para el canal industrial | Alimentación
+
+**Description:** Manuelita ha desarrollado un portafolio para la atención de clientes industriales que utilizan nuestros productos como materia prima.
+
 ## Productos para el canal industrial
 
 Manuelita ha desarrollado un portafolio para la atención de clientes industriales que utilizan nuestros productos como materia prima en sus procesos productivos: Azúcar refinada, morena y blanca en diferentes presentaciones. Aceite crudo de palma y aceite de palmiste.

@@ -1,3 +1,5 @@
+**Title:**  - Manuelita
+
 Manuelita es una organización agro industrial que a lo largo de su historia ha demostrado solidez sustentada en su desempeño económico, social y ambiental y un comportamiento ético y responsable frente a sus diversos grupos de interés. Hemos diversificado nuestro portafolio buscando oporrtunidades en nuevos paises y negocios
 
 Ofrecemos alimentos, energías renovables y otros insumos para las industrias en **cuatro plataformas de negocio agroindustriales:**

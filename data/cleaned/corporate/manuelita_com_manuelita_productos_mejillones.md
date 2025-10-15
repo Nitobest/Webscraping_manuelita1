@@ -1,3 +1,5 @@
+**Title:** Mejillones - Manuelita
+
 # Mejillones
 
 Ofrecemos mejillones congelados en distintos formatos y empaques para nuestros distintos clientes y mercados: Carne de Mejillón IQF, Mejillón Media Concha IQF y Mejillón Entero en su jugo, y una línea de mejillón entero con salsas. Nuestros mejillones son producidos en condiciones ambientales destacadas con alta calidad y consistencia, a costo competitivo, lo que nos permite estar presentes en más de 20 mercados y abastecer distintos canales de venta: sector industrial y de procesamiento, foodservice y retail.

@@ -1,3 +1,5 @@
+**Title:** Derivados de palma - Manuelita
+
 # Derivados de palma
 
 Manuelita ofrece sub productos derivados de valor agregado, obtenidos a partir de la palma de aceite, que sirven como base para la fabricación de productos alimenticios, farmacéuticos, cosméticos y de cuidado personal principalmente.

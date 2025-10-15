@@ -1,3 +1,7 @@
+**Title:** Manuelita | Comercialización de energía eléctrica
+
+**Description:** Conoce la línea Energética de Manuelita: energía eléctrica de biomasa, biodiesel y bioetanol que impulsan la sostenibilidad.
+
 ## Energía eléctrica
 
 Comercializamos energía eléctrica de biomasa como parte de nuestro enfoque de ofrecer energías limpias provenientes de fuentes renovables, y así aportar a la seguridad energética y a la meta de reducción de emisiones de Gases de Efecto Invernadero.

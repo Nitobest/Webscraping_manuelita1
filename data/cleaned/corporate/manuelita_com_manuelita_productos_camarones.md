@@ -1,3 +1,5 @@
+**Title:** Camarones - Manuelita
+
 # Camarones
 
 Manuelita ofrece camarón entero en variedad de presentaciones, de calidad superior en textura, brillo, talla, apariencia y desgrane. Nuestros productos están orientados a mercados de exportación, principalmente a clientes en Europa.

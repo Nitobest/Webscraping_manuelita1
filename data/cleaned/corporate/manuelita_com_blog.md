@@ -1,3 +1,7 @@
+**Title:** Blog de Manuelita | Cultivamos cosas buenas
+
+**Description:** Explora el blog de Manuelita y descubre contenidos sobre agroindustria, sostenibilidad y desarrollo en América Latina.
+
 Blog / 23 septiembre / 2025
 
 #  Manuelita y comunidades vecinas: compromiso y confianza para el tejido social

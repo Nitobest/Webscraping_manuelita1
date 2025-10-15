@@ -1,3 +1,9 @@
+**Title:**  - Manuelita Cultivamos cosas buenas
+
+**Description:** Conoce la estructura de Gobierno corporativo de Manuelita, conformado por una junta directiva, auditoría interna y línea ética
+
+Regresar a Sostenibilidad
+
 # Gobierno corporativo
 
 ## Estructura de gobierno

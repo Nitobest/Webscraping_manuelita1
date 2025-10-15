@@ -1,3 +1,5 @@
+**Title:** Derivados de la caña - Manuelita
+
 # Derivados de la caña
 
 Manuelita ofrece sub productos derivados de valor agregado, obtenidos a partir de la caña de azúcar, que sirven como base para la fabricación de productos alimenticios, farmacéuticos, cosméticos y de cuidado personal principalmente.

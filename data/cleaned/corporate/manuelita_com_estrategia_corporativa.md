@@ -1,3 +1,7 @@
+**Title:** Conoce la estrategia corporativa de Manuelita
+
+**Description:** Conoce la estrategia corporativa de Manuelita: propósito, valores y visión 2030 que impulsan la sostenibilidad y bienestar en sus operaciones
+
 ##### Visión Estratégica
 
 ### 1\. Propósito Central

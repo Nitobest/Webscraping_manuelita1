@@ -1,3 +1,7 @@
+**Title:** Informe de Sostenibilidad Manuelita 2023-2024
+
+**Description:** La sostenibilidad ha sido la esencia de nuestra gestión empresarial por más de 160 años. Descarga nuestro más reciente informe
+
 2024    Manuelita Sustainability Report
 2023-2024
 

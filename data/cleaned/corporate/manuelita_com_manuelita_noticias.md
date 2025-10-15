@@ -1,4 +1,6 @@
-Noticias / 10 junio / 2025
+**Title:** Noticias archivo - Manuelita
+
+/ 10 junio / 2025
 
 #  Informe de Sostenibilidad 2023 – 2024
 

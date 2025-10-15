@@ -1,3 +1,7 @@
+**Title:** Manuelita 160 años cultivando cosas buenas
+
+**Description:** Celebramos 160 años cultivando cosas buenas: Manuelita una trayectoria de historia, innovación y compromiso con la sostenibilidad. Te contamos sobre nuestros hitos y logros a lo largo de los años.
+
 [  ]()
 
 ## Cultivamos

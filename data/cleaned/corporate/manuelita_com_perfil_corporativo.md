@@ -1,3 +1,5 @@
+**Title:** Perfil corporativo - Manuelita
+
 # Perfil corporativo
 
 Con 161 años de historia, Manuelita es una organización agroindustrial diversificada en los sectores de alimentos y energía renovable, con presencia en varias zonas productivas de las Américas.

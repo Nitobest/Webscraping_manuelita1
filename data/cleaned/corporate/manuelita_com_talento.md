@@ -1,3 +1,7 @@
+**Title:** Únete a nuestro equipo Manuelita | Conoce nuestras vacantes
+
+**Description:** En Manuelita, estamos comprometidos con el desarrollo sostenible y la innovación. Valoramos a las personas apasionadas. ¡Únete!
+
 # Únete a nuestro equipo
 
 En Manuelita, estamos comprometidos con el desarrollo sostenible y la innovación. Valoramos a las personas apasionadas que quieren marcar una diferencia en la agroindustria y en el bienestar de nuestras comunidades. Si te motiva ser parte de una organización global con más de 160 años de historia, que fomenta el crecimiento profesional y personal, ¡esta es tu oportunidad!
@@ -27,14 +31,6 @@ Electricista II #SoloTalentoExterno
 Palmira, Colombia \- $ 3.222.270
 
 Postúlate a hasta el 14 Oct 2025
-
-Ver detalle
-
-Ayudante I #SoloTalentoManuelita
-
-Palmira, Colombia \- $ 2.529.780
-
-Postúlate a hasta el 13 Oct 2025
 
 Ver detalle
 
@@ -96,6 +92,12 @@ Laredo, Peru
 
 Ver detalle
 
+Practicante Jurídico
+
+Villavicencio, Colombia
+
+Ver detalle
+
 CBM mecánico
 
 San Carlos de Guaroa, Colombia
@@ -120,27 +122,15 @@ Puerto Montt, Chile
 
 Ver detalle
 
-Conductor de Autocargue
+Auxiliar de Planillas
 
-Orocué, Colombia
-
-Postúlate a hasta el 11 Oct 2025
+Ica, Peru
 
 Ver detalle
 
-Operario Planta
+Auxiliar de Planillas
 
-Orocué, Colombia
-
-Postúlate a hasta el 11 Oct 2025
-
-Ver detalle
-
-Operario Taller
-
-Orocué, Colombia
-
-Postúlate a hasta el 11 Oct 2025
+Ica, Peru
 
 Ver detalle
 

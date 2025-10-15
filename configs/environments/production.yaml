@@ -24,8 +24,25 @@ scraping:
       - "https://www.manuelita.com/talento/"
       - "https://www.manuelita.com/manuelita-noticias/"
       - "https://www.manuelita.com/blog/"
+      - "http://fundacionmanuelita.org"
+      - "http://www.valleonline.org/"
       - "https://www.manuelita.com/manuelita-160/"
       - "https://www.manuelita.com/contacto/"
+      - "https://www.manuelita.com/manuelita-productos/azucar-y-endulzantes/"
+      - "https://www.manuelita.com/manuelita-productos/azucar-industrial/"
+      - "https://www.manuelita.com/fundacion-manuelita/"
+      - "https://www.manuelita.com/manuelita-sostenib/ambiental/"
+      - "https://www.manuelita.com/manuelita-productos/bioetanol/"
+      - "https://www.manuelita.com/manuelita-productos/biodiesel/"
+      - "https://www.manuelita.com/manuelita-sostenib/economico/"
+      - "https://www.manuelita.com/manuelita-sostenib/social/"
+      - "https://www.manuelita.com/manuelita-noticias/manuelita-160-anos-comprometida-con-un-futuro-sostenible/"
+      - "https://www.manuelita.com/alimenticio/"
+      - "https://www.manuelita.com/energetico/"
+      - "https://www.manuelita.com/otros/"
+      - "https://www.manuelita.com/aviso-autorizacion-tratamiento-datos-personales/"
+      - "https://www.manuelita.com/sagrilaft-2/"
+      - "https://www.manuelita.com/ptee-2/"
     
     news_base_urls:
       - "https://www.manuelita.com/manuelita-noticias"
@@ -43,7 +60,9 @@ scraping:
       - "https://www.manuelita.com/manuelita-noticias/page/13"
       - "https://fundacionmanuelita.org/noticias/"
       - "https://fundacionmanuelita.org/"
-    
+      - "https://www.manuelita.com/manuelita-noticias/manuelita-y-comunidades-vecinas-compromiso-y-confianza-para-el-tejido-social/"
+      - "https://www.manuelita.com/manuelita-noticias/manuelita-recibe-reconocimiento-por-su-compromiso-social-con-las-comunidades-del-meta/"
+
     excluded_patterns:
       - "*/tag/*"
       - "*/author/*"

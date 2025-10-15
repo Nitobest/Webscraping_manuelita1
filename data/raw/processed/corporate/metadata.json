@@ -1,31 +1,18 @@
 {
-  "created_at": "2025-10-14T01:31:27.445571",
-  "total_items": 2,
+  "created_at": "2025-10-15T03:20:34.924119",
+  "total_items": 1,
   "items": [
     {
-      "source_url": "https://www.manuelita.com",
+      "source_url": "https://www.manuelita.com/manuelita-noticias",
       "content_type": "markdown",
-      "timestamp": 1760405487.444608,
-      "filename": "manuelita_com_home.md",
+      "timestamp": 1760498434.8971267,
+      "filename": "manuelita_com_manuelita_noticias.md",
       "metadata": {
-        "url": "https://www.manuelita.com",
-        "title": "Manuelita | Cultivamos cosas buenas que generan progreso y bienestar",
-        "description": "Generamos progreso y bienestar con empresas y productos ejemplares a partir del aprovechamiento racional y sostenible de los recursos naturales.",
-        "scraped_at": 1760405481.7716658,
-        "og_title": "Manuelita"
-      }
-    },
-    {
-      "source_url": "https://www.manuelita.com/perfil-corporativo/",
-      "content_type": "markdown",
-      "timestamp": 1760405487.44461,
-      "filename": "manuelita_com_perfil_corporativo.md",
-      "metadata": {
-        "url": "https://www.manuelita.com/perfil-corporativo/",
-        "title": "Perfil corporativo - Manuelita",
+        "url": "https://www.manuelita.com/manuelita-noticias",
+        "title": "Noticias archivo - Manuelita",
         "description": "",
-        "scraped_at": 1760405484.634157,
-        "og_title": "Perfil corporativo - Manuelita"
+        "scraped_at": 1760498361.3362982,
+        "og_title": "Manuelita y comunidades vecinas: compromiso y confianza para el tejido social"
       }
     }
   ]

@@ -1,5 +1,11 @@
+**Title:** Modelo de Sostenibilidad  | Manuelita
+
+**Description:** En Manuelita, estamos comprometidos con el medio ambiente y la conservación de los ecosistemas de las regiones donde operamos.
+
 # Estamos comprometidos con el **cuidado del medio ambiente y la conservación de los ecosistemas** de
 las regiones donde operamos.
+
+Regresar a Sostenibilidad
 
 Para lograrlo,**implementamos prácticas de gestión ambiental** que buscan el uso eficiente del agua, la protección de la calidad del aire y el suelo, la reducción de la generación de residuos y la mitigación de las emisiones de gases de efecto invernadero.
 
