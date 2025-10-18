@@ -123,8 +123,19 @@ Webscraping_manuelita1/
 ```
 
 ---
+## Pipeline para la extracción del webscraping
 
-## 🧠 Sistema RAG Intelligence
+
+### **Extracción:** 
+Se navega con requests usando sesiones persistentes, rotación de user-agent y rate limiting con backoff. Se descubren URLs (sitemaps/patrones), se aplican reglas por tipo de contenido (corporate/news) y se obtiene el HTML. El parsing se hace con BeautifulSoup4+lxml; hay reintentos, timeouts y logging de errores.
+
+### **Transformación:** 
+El HTML se limpia y normaliza (UTF-8), se convierte a texto/markdown con html2text y se eliminan elementos de navegación, scripts y estilos. Se extraen metadatos (título, fecha, fuente, categoría), se valida el esquema con Pydantic, se segmenta por encabezados (#, ##, ###) y se deduplica por hash.
+
+### **Carga:**
+Se guarda el contenido en estructura organizada por tipo/fecha/fuente, con archivos .md y un .json de metadata por documento. Se mantiene nomenclatura consistente, versionado y logs; se generan índices y copias en data/raw/ para alimentar el RAG. El proceso es idempotente y deja trazabilidad para auditoría.
+
+## Sistema RAG Intelligence
 
 ### **Arquitectura RAG Avanzada**
 
