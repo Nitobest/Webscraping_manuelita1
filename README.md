@@ -92,7 +92,8 @@ Webscraping_manuelita1/
 ├── 📁 configs/                    # Archivos de configuración
 │   └── 📄 development.yaml        # Configuración desarrollo
 ├── 📁 data/                       # Directorio datos de salida
-│   └── 📁 raw/                    # Contenido procesado para RAG
+│   └── 📁 raw/                    # Contenido raw que pasa a cleaned
+│   └── 📁 cleaned/                # Contenido cleaned para RAG
 ├── 📁 rag/                        # Sistema RAG Intelligence
 │   ├── 📄 app.py                  # Aplicación RAG con Gradio
 │   └── 📄 requirements.txt       # Dependencias RAG
