@@ -364,6 +364,34 @@ def page_admin():
 def page_chat():
     """Página de chat interactivo."""
     
+    # VALIDAR API KEY
+    import os
+    has_openai_key = bool(os.getenv("OPENAI_API_KEY"))
+    has_google_key = bool(os.getenv("GOOGLE_API_KEY"))
+    
+    if not has_openai_key and not has_google_key:
+        st.error(
+            "❌ **No hay API Keys configuradas**\n\n"
+            "Para usar el chat, necesitas configurar una API key. "
+            "Ver: CHAT_TROUBLESHOOTING.md para instrucciones."
+        )
+        st.info(
+            "**Opciones:**\n"
+            "1. Crea archivo `.env` con OPENAI_API_KEY o GOOGLE_API_KEY\n"
+            "2. O configura variables de entorno: `$env:OPENAI_API_KEY = 'tu-key'`\n"
+            "3. Reinicia Streamlit después de configurar"
+        )
+        return
+    
+    if not st.session_state.agent.llm:
+        st.warning(
+            "⚠️ **LLM no inicializado**\n\n"
+            "El modelo LLM no se pudo cargar. Verifica que:\n"
+            "- Tengas `langchain-openai` o `langchain-google-genai` instalado\n"
+            "- Tu API key sea válida\n"
+            "- Reinicia la aplicación si acabas de configurar la API key"
+        )
+    
     # SIDEBAR
     with st.sidebar:
         st.header("💬 Conversaciones")
