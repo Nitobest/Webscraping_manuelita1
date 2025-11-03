@@ -11,6 +11,7 @@ Requires-Dist: langchain-community>=0.0.10
 Requires-Dist: langchain-core>=0.1.0
 Requires-Dist: langchain-openai>=0.0.5
 Requires-Dist: langchain-google-genai>=0.0.5
+Requires-Dist: langchain-ollama>=0.0.1
 Requires-Dist: langchain-huggingface>=0.0.1
 Requires-Dist: langchain-text-splitters>=0.0.1
 Requires-Dist: ollama>=0.0.1

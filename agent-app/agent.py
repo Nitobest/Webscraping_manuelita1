@@ -70,7 +70,11 @@ class ManuelitaAgent:
                 self._init_openai_llm(model_name)
             elif "gemini" in model_name.lower():
                 self._init_gemini_llm(model_name)
+            elif any(keyword in model_name.lower() for keyword in ["qwen", "llama", "mistral", "neural"]):
+                # Modelo Ollama detectado por keyword
+                self._init_ollama_llm(model_name)
             elif config.llm.use_ollama:
+                # Flag use_ollama explícitamente activado
                 self._init_ollama_llm(model_name)
             else:
                 # Default a OpenAI si API key existe
@@ -133,10 +137,23 @@ class ManuelitaAgent:
     
     def _init_ollama_llm(self, model: str) -> None:
         """Inicializa Ollama local."""
-        logger.info(f"Usando Ollama: {model}")
-        logger.warning("Ollama integration pendiente - soporte parcial")
-        # TODO: Integrar con LangChain Ollama
-        self.llm = None
+        try:
+            try:
+                from langchain_ollama import OllamaLLM
+            except ImportError:
+                logger.error("OllamaLLM no disponible. Instala: pip install langchain-ollama")
+                return
+            
+            ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+            
+            self.llm = OllamaLLM(
+                model=model,
+                base_url=ollama_base_url,
+                temperature=config.llm.temperature
+            )
+            logger.info(f"✅ Ollama {model} inicializado en {ollama_base_url}")
+        except Exception as e:
+            logger.error(f"Error inicializando Ollama: {e}")
     
     def route_question(self, question: str) -> str:
         """Determina qué herramienta usar."""
