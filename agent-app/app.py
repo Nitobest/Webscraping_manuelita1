@@ -54,9 +54,15 @@ if 'json_generated' not in st.session_state:
 # FUNCIONES AUXILIARES
 # ============================================================================
 
-def stream_response(text: str, delay_ms: int = 50) -> None:
-    """Simula streaming de respuesta carácter por carácter."""
-    delay_sec = delay_ms / 1000.0
+def stream_response(text: str, speed_ms: int = 50) -> None:
+    """Simula streaming de respuesta carácter por carácter.
+    
+    Args:
+        text: Texto a mostrar
+        speed_ms: Velocidad en ms (10=rápido, 200=lento)
+    """
+    # Invertir: 10ms → delay bajo (rápido), 200ms → delay alto (lento)
+    delay_sec = speed_ms / 1000.0
     placeholder = st.empty()
     streamed_text = ""
     
@@ -226,11 +232,12 @@ def page_admin():
                 value=config.streaming.enabled
             )
             config.streaming.speed_ms = st.slider(
-                "Velocidad de Streaming (ms)",
+                "Velocidad de Streaming (Delay ms por carácter)",
                 min_value=10,
                 max_value=200,
                 value=config.streaming.speed_ms,
-                step=10
+                step=10,
+                help="Menor = más rápido, Mayor = más lento. Ej: 10ms rápido, 100ms normal, 200ms lento"
             )
             config.streaming.icon = st.selectbox(
                 "Icono de Streaming",
@@ -456,7 +463,7 @@ def page_chat():
                 result = process_user_input(user_input)
             
             if config.streaming.enabled and result['success']:
-                stream_response(result['answer'], config.streaming.speed_ms)
+                stream_response(result['answer'], speed_ms=config.streaming.speed_ms)
             else:
                 st.write(result['answer'])
             
