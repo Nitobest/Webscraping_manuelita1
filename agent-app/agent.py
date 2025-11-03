@@ -177,8 +177,9 @@ class ManuelitaAgent:
                 
                 # Generar respuesta con LLM si disponible
                 if self.llm:
+                    memory_context = self.get_memory_context()
                     response = self._generate_response(
-                        question, context_used, temperature, max_tokens
+                        question, context_used, memory_context, temperature, max_tokens
                     )
                 else:
                     response = f"Basado en el contexto disponible:\n\n{context_used[:500]}..."
@@ -213,9 +214,9 @@ class ManuelitaAgent:
                 'success': False
             }
     
-    def _generate_response(self, question: str, context: str,
+    def _generate_response(self, question: str, context: str, memory_context: str,
                           temperature: float, max_tokens: int) -> str:
-        """Genera respuesta con el LLM."""
+        """Genera respuesta con el LLM incluyendo historial de conversación."""
         try:
             if not self.llm:
                 return "LLM no disponible."
@@ -250,14 +251,17 @@ Si necesitas más detalles, dirige al usuario a:
 - Teléfono: (602) 889 1444 (Centro Corporativo)
 - Sitio web oficial: https://www.manuelita.com
 
-## CONTEXTO DISPONIBLE:
-{context}
+## HISTORIAL DE CONVERSACIÓN (Memoria):
+{memory_context if memory_context else "(Primera pregunta - sin historial)"}
 
-## PREGUNTA DEL USUARIO:
+## CONTEXTO DE DOCUMENTOS (RAG):
+{context if context else "(No hay documentos relevantes)"}
+
+## PREGUNTA ACTUAL DEL USUARIO:
 {question}
 
 ## TU RESPUESTA:
-Basándome en la información de Manuelita:"""
+Basándome en la información de Manuelita y considerando el historial:"""
             
             response = self.llm.invoke(prompt)
             return response.content
