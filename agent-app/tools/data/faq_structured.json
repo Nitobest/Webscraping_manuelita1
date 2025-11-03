@@ -1,101 +1,184 @@
 {
   "company_info": {
     "name": "Manuelita",
-    "description": "Plataforma de web scraping y RAG",
-    "founded": "2024"
+    "description": "Organización agroindustrial diversificada principalmente en los sectores de alimentos y energía renovable, con presencia en varios países y zonas productivas de Las Américas",
+    "founded": "1864",
+    "years_operating": "160 años",
+    "mission": "Cultivamos cosas buenas que generan progreso y bienestar",
+    "values": ["Integridad", "Respeto por la gente", "Responsabilidad social y ambiental", "Austeridad", "Espíritu pionero", "Orientación al cliente"],
+    "sectors": ["Alimentos", "Energía renovable"]
   },
   "contact": {
-    "default_phone": "+34 911 234 567",
-    "default_email": "info@manuelita.es",
-    "support_phone": "+34 911 234 568",
-    "support_email": "soporte@manuelita.es",
+    "default_phone": "(602) 889 1444",
+    "default_email": "contacto@manuelita.com",
+    "support_phone": "(602) 3976060 Ext. 1201",
+    "support_email": "soporte@manuelita.com",
+    "emergency_phone": "(602) 6878900 Ext. 1555",
+    "emergency_cellphones": ["316 8329655", "315 4944432"],
     "hours": {
-      "monday_friday": "9:00 - 18:00",
-      "saturday": "10:00 - 14:00",
+      "monday_friday": "8:00 - 17:00",
+      "saturday": "Cerrado",
       "sunday": "Cerrado"
     },
     "locations": [
       {
-        "name": "Sede Principal",
-        "address": "Calle Principal 123",
-        "city": "Madrid",
-        "country": "España",
-        "phone": "+34 911 234 567",
-        "coordinates": {
-          "latitude": 40.4168,
-          "longitude": -3.7038
-        }
+        "name": "Centro Corporativo Manuelita",
+        "address": "Calle 6 #3 - 13",
+        "city": "Cali",
+        "country": "Colombia",
+        "phone": "(602) 889 1444",
+        "type": "Corporativo"
       },
       {
-        "name": "Oficina Barcelona",
-        "address": "Paseo de Gracia 45",
-        "city": "Barcelona",
-        "country": "España",
-        "phone": "+34 931 234 567",
-        "coordinates": {
-          "latitude": 41.3851,
-          "longitude": 2.1734
-        }
+        "name": "Manuelita Azúcar y Energía",
+        "address": "Km 7 vía Palmira - El Cerrito",
+        "city": "Palmira",
+        "state_province": "Valle del Cauca",
+        "country": "Colombia",
+        "phone": "(602) 890 0878",
+        "type": "Producción"
       },
       {
-        "name": "Oficina Valencia",
-        "address": "Avenida del Puerto 78",
-        "city": "Valencia",
-        "country": "España",
-        "phone": "+34 961 234 567",
-        "coordinates": {
-          "latitude": 39.4699,
-          "longitude": -0.3763
-        }
+        "name": "Manuelita Aceites y Energía",
+        "address": "Centro Comercial Villacentro Local 5 y 6",
+        "city": "Villavicencio",
+        "state_province": "Meta",
+        "country": "Colombia",
+        "phone": "PBX: (608) 6611666",
+        "type": "Oficina Regional"
+      },
+      {
+        "name": "Océanos",
+        "address": "Carretera Mamonal No. 1-504",
+        "city": "Cartagena",
+        "state_province": "Bolívar",
+        "country": "Colombia",
+        "phone": "PBX: (605) 677 8400",
+        "type": "Producción"
+      },
+      {
+        "name": "Agroindustrial Laredo",
+        "address": "Av Trujillo S/N - Zona Industrial",
+        "city": "Laredo",
+        "state_province": "La Libertad",
+        "country": "Perú",
+        "phone": "445028 - 435010",
+        "type": "Producción"
+      },
+      {
+        "name": "Manuelita Frutas y Hortalizas",
+        "address": "Av. Nicolás Arriola 314 Of. 1103-B Urb. Santa Catalina La Victoria",
+        "city": "Lima",
+        "country": "Perú",
+        "phone": "(51-1) 225 2252",
+        "type": "Oficina"
+      },
+      {
+        "name": "Mejillones América",
+        "address": "Ruta 5 Huelmo Km 3",
+        "city": "Puerto Montt",
+        "state_province": "Los Lagos",
+        "country": "Chile",
+        "phone": "(56-65) 772 039",
+        "type": "Producción"
       }
     ]
   },
   "products": [
     {
-      "id": "prod_001",
-      "name": "Web Scraper Pro",
-      "description": "Herramienta avanzada de web scraping con IA",
-      "price": "99.99",
-      "currency": "EUR",
-      "category": "Software"
+      "id": "prod_sugar_001",
+      "name": "Azúcar y Endulzantes",
+      "description": "Azúcar de alta calidad producida en nuestras instalaciones en Palmira",
+      "category": "Alimentos",
+      "subcategory": "Azúcar",
+      "origin": "Colombia"
     },
     {
-      "id": "prod_002",
-      "name": "RAG Pipeline",
-      "description": "Sistema de generación aumentada por recuperación",
-      "price": "149.99",
-      "currency": "EUR",
-      "category": "Servicio"
+      "id": "prod_sugar_002",
+      "name": "Azúcar Industrial",
+      "description": "Azúcar industrial para aplicaciones de manufactura",
+      "category": "Alimentos",
+      "subcategory": "Azúcar Industrial",
+      "origin": "Colombia"
     },
     {
-      "id": "prod_003",
-      "name": "Data Analytics Suite",
-      "description": "Suite completa de análisis de datos",
-      "price": "199.99",
-      "currency": "EUR",
-      "category": "Software"
+      "id": "prod_fruits_001",
+      "name": "Uvas de Mesa - Variedades Flame, Sugraone, Red Globe, Crimson",
+      "description": "Uvas de alta calidad producidas en Ica, Perú. Comercializadas con marcas Manuelita e Inka Grapes a mercados en Europa, Estados Unidos y Asia",
+      "category": "Alimentos",
+      "subcategory": "Frutas y Hortalizas",
+      "origin": "Perú",
+      "market_reach": ["Europa", "Estados Unidos", "Asia"]
     },
     {
-      "id": "prod_004",
-      "name": "Enterprise Plan",
-      "description": "Plan empresarial con soporte 24/7",
-      "price": "499.99",
-      "currency": "EUR",
-      "category": "Suscripción"
+      "id": "prod_seafood_001",
+      "name": "Camarones",
+      "description": "Camarones frescos y de calidad",
+      "category": "Alimentos",
+      "subcategory": "Mariscos",
+      "origin": "Colombia"
+    },
+    {
+      "id": "prod_seafood_002",
+      "name": "Mejillones",
+      "description": "Mejillones frescos producidos en Puerto Montt, Chile",
+      "category": "Alimentos",
+      "subcategory": "Mariscos",
+      "origin": "Chile"
+    },
+    {
+      "id": "prod_energy_001",
+      "name": "Bioetanol",
+      "description": "Biocombustible renovable derivado de la caña",
+      "category": "Energía Renovable",
+      "subcategory": "Derivados de caña"
+    },
+    {
+      "id": "prod_energy_002",
+      "name": "Biodiesel",
+      "description": "Biocombustible derivado de palma",
+      "category": "Energía Renovable",
+      "subcategory": "Derivados de palma"
+    },
+    {
+      "id": "prod_derivatives_001",
+      "name": "Derivados de la Caña",
+      "description": "Productos derivados del procesamiento de caña de azúcar",
+      "category": "Productos Industriales",
+      "subcategory": "Derivados agrícolas"
+    },
+    {
+      "id": "prod_derivatives_002",
+      "name": "Derivados de Palma",
+      "description": "Productos derivados del procesamiento de palma",
+      "category": "Productos Industriales",
+      "subcategory": "Derivados agrícolas"
     }
   ],
   "faqs": [
     {
-      "question": "¿Cuál es el costo del servicio?",
-      "answer": "Nuestros precios comienzan en €99.99 mensuales. Consulta nuestros planes en la sección de productos."
+      "question": "¿Quién es Manuelita?",
+      "answer": "Manuelita es una organización agroindustrial diversificada con más de 160 años de historia. Fue fundada en 1864 por Santiago Martín Eder en Palmira, Colombia. Operamos principalmente en los sectores de alimentos y energía renovable con presencia en varios países de Las Américas."
     },
     {
-      "question": "¿Ofrecen prueba gratuita?",
-      "answer": "Sí, ofrecemos 14 días de prueba gratuita sin necesidad de tarjeta de crédito."
+      "question": "¿Cuáles son los valores de Manuelita?",
+      "answer": "Nuestros valores corporativos son: Integridad, Respeto por la gente y compromiso con su desarrollo, Responsabilidad social y ambiental, Austeridad, Espíritu pionero, y Orientación al cliente."
     },
     {
-      "question": "¿Qué nivel de soporte ofrecen?",
-      "answer": "Ofrecemos soporte por email, chat y teléfono. El plan Enterprise incluye soporte 24/7."
+      "question": "¿Qué productos produce Manuelita?",
+      "answer": "Manuelita produce azúcar, uvas de mesa, camarones, mejillones, bioetanol, biodiesel y derivados de caña y palma. Nuestros productos se comercializan en mercados de América, Europa y Asia."
+    },
+    {
+      "question": "¿En qué países opera Manuelita?",
+      "answer": "Manuelita tiene operaciones en Colombia, Perú y Chile, con presencia en varias zonas productivas estratégicas de Las Américas."
+    },
+    {
+      "question": "¿Cuáles son los horarios de atención?",
+      "answer": "Nuestros horarios de atención son de lunes a viernes de 8:00 a 17:00. Contamos con líneas de emergencia disponibles en horario nocturno para inconvenientes con productos."
+    },
+    {
+      "question": "¿Cómo puedo contactar a Manuelita?",
+      "answer": "Puedes contactarnos al Centro Corporativo en Cali al teléfono (602) 889 1444, o a través de soporte técnico al (602) 3976060 Ext. 1201. Para emergencias nocturnas: (602) 6878900 Ext. 1555."
     }
   ]
 }
