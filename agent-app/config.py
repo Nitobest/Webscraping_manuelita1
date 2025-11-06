@@ -20,11 +20,12 @@ except ImportError:
 class LLMConfig:
     """Configuración del modelo LLM."""
     model: str = "gpt-3.5-turbo"
+    provider: str = "OpenAI"  # OpenAI, Google Gemini, o Ollama
     temperature: float = 0.05
     top_k: int = 4
     max_tokens: int = 500
     use_ollama: bool = False
-    ollama_model: str = "qwen:4b"
+    ollama_model: str = "qwen3:4b"
     api_key: str = os.getenv("OPENAI_API_KEY", "")
     
     # Opciones disponibles de modelos
@@ -43,11 +44,10 @@ class LLMConfig:
     ]
     
     OLLAMA_MODELS = [
-        "qwen:4b",
-        "qwen:7b",
-        "llama2:7b",
-        "mistral:7b",
-        "neural-chat:7b"
+        "qwen3:4b",
+        "deepseek-r1:8b",
+        "gemma3:12b",
+        "nomic-embed-text:latest"
     ]
 
 

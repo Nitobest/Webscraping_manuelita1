@@ -34,8 +34,16 @@ st.set_page_config(
 # INICIALIZACIÓN DE ESTADO
 # ============================================================================
 
+if 'current_provider' not in st.session_state:
+    st.session_state.current_provider = config.llm.provider
+
 if 'agent' not in st.session_state:
-    st.session_state.agent = ManuelitaAgent()
+    st.session_state.agent = ManuelitaAgent(provider=st.session_state.current_provider)
+else:
+    # Si el proveedor cambió en config, reinicializa el agente
+    if config.llm.provider != st.session_state.current_provider:
+        st.session_state.current_provider = config.llm.provider
+        st.session_state.agent = ManuelitaAgent(provider=config.llm.provider)
 
 if 'session_manager' not in st.session_state:
     st.session_state.session_manager = SessionManager()
@@ -214,9 +222,10 @@ def page_admin():
             
             if selected_model != config.llm.model:
                 config.llm.model = selected_model
-                # Reinicializar agente con nuevo modelo
-                st.session_state.agent = ManuelitaAgent()
-                st.success(f"✅ Modelo cambiado a: {selected_model}")
+                config.llm.provider = provider  # Guardar proveedor seleccionado
+                # Reinicializar agente con nuevo modelo Y proveedor
+                st.session_state.agent = ManuelitaAgent(provider=provider)
+                st.success(f"✅ Modelo cambiado a: {selected_model} ({provider})")
                 st.rerun()
             
             st.divider()

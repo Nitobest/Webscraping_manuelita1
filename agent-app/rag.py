@@ -18,11 +18,23 @@ try:
     from langchain_community.vectorstores import Chroma
     from langchain_huggingface import HuggingFaceEmbeddings
     from langchain_community.retrievers import BM25Retriever
-    from langchain.retrievers import EnsembleRetriever, ContextualCompressionRetriever
-    from langchain_community.cross_encoders import HuggingFaceCrossEncoder
-    from langchain.retrievers.document_compressors import CrossEncoderReranker
+    try:
+        from langchain.retrievers import EnsembleRetriever, ContextualCompressionRetriever
+    except ImportError:
+        from langchain_community.retrievers import EnsembleRetriever
+        from langchain.retrievers import ContextualCompressionRetriever
+    try:
+        from langchain_community.cross_encoders import HuggingFaceCrossEncoder
+        from langchain.retrievers.document_compressors import CrossEncoderReranker
+    except ImportError:
+        HuggingFaceCrossEncoder = None
+        CrossEncoderReranker = None
 except ImportError as e:
     logger.error(f"Dependencias RAG no instaladas: {e}")
+    EnsembleRetriever = None
+    ContextualCompressionRetriever = None
+    CrossEncoderReranker = None
+    HuggingFaceCrossEncoder = None
 
 
 class RAGSystem:
@@ -134,6 +146,11 @@ class RAGSystem:
                 logger.warning("Vectorstore o splits no disponibles")
                 return
             
+            if not EnsembleRetriever:
+                logger.warning("EnsembleRetriever no disponible, usando solo vectorstore")
+                self.ensemble_retriever = self.vectorstore.as_retriever(search_kwargs={"k": 7})
+                return
+            
             # Semantic
             semantic_retriever = self.vectorstore.as_retriever(
                 search_kwargs={"k": 7}
@@ -159,6 +176,11 @@ class RAGSystem:
                 logger.warning("Ensemble retriever no disponible")
                 return
             
+            if not HuggingFaceCrossEncoder or not CrossEncoderReranker:
+                logger.warning("HuggingFaceCrossEncoder no disponible, usando ensemble sin re-ranking")
+                self.reranking_retriever = self.ensemble_retriever
+                return
+            
             reranker_model = HuggingFaceCrossEncoder(
                 model_name="BAAI/bge-reranker-base"
             )
@@ -174,6 +196,8 @@ class RAGSystem:
             logger.info("✅ Re-ranker creado")
         except Exception as e:
             logger.error(f"Error creando reranker: {e}")
+            # Fallback: usar ensemble sin re-ranking
+            self.reranking_retriever = self.ensemble_retriever
     
     def retrieve(self, query: str, top_k: int = 4) -> Tuple[List[str], List[Dict[str, Any]]]:
         """

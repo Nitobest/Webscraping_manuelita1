@@ -20,16 +20,18 @@ from config import config
 class ManuelitaAgent:
     """Agente inteligente con enrutamiento RAG/Structured."""
     
-    def __init__(self, api_key: Optional[str] = None, use_ollama: bool = False):
+    def __init__(self, api_key: Optional[str] = None, use_ollama: bool = False, provider: Optional[str] = None):
         """
         Inicializa el agente.
         
         Args:
             api_key: API key para OpenAI (si None, intenta leer de env)
-            use_ollama: Si True, usa Ollama en lugar de OpenAI
+            use_ollama: Si True, usa Ollama en lugar de OpenAI (deprecated, usar provider)
+            provider: Proveedor explícito ("OpenAI", "Google Gemini", "Ollama")
         """
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         self.use_ollama = use_ollama
+        self.provider = provider or config.llm.provider
         self.rag = None
         self.structured_tool = None
         self.llm = None
@@ -64,27 +66,34 @@ class ManuelitaAgent:
         """Inicializa el modelo LLM."""
         try:
             model_name = config.llm.model
+            provider = self.provider.lower()
             
-            # Detectar proveedor por nombre del modelo
-            if "gpt" in model_name.lower():
+            # Usar proveedor explícito si está disponible
+            if "openai" in provider:
                 self._init_openai_llm(model_name)
-            elif "gemini" in model_name.lower():
+            elif "gemini" in provider or "google" in provider:
                 self._init_gemini_llm(model_name)
-            elif any(keyword in model_name.lower() for keyword in ["qwen", "llama", "mistral", "neural"]):
-                # Modelo Ollama detectado por keyword
-                self._init_ollama_llm(model_name)
-            elif config.llm.use_ollama:
-                # Flag use_ollama explícitamente activado
+            elif "ollama" in provider:
                 self._init_ollama_llm(model_name)
             else:
-                # Default a OpenAI si API key existe
-                if os.getenv("OPENAI_API_KEY"):
+                # Fallback: detectar por nombre del modelo
+                if "gpt" in model_name.lower():
                     self._init_openai_llm(model_name)
-                elif os.getenv("GOOGLE_API_KEY"):
+                elif "gemini" in model_name.lower():
                     self._init_gemini_llm(model_name)
+                elif any(keyword in model_name.lower() for keyword in ["qwen", "llama", "mistral", "neural"]):
+                    self._init_ollama_llm(model_name)
+                elif self.use_ollama:
+                    self._init_ollama_llm(model_name)
                 else:
-                    logger.warning("No hay API keys configuradas. LLM no disponible.")
-                    self.llm = None
+                    # Default
+                    if os.getenv("OPENAI_API_KEY"):
+                        self._init_openai_llm(model_name)
+                    elif os.getenv("GOOGLE_API_KEY"):
+                        self._init_gemini_llm(model_name)
+                    else:
+                        logger.warning("No hay API keys configuradas. LLM no disponible.")
+                        self.llm = None
         except Exception as e:
             logger.error(f"Error inicializando LLM: {e}")
             self.llm = None
@@ -281,7 +290,11 @@ Si necesitas más detalles, dirige al usuario a:
 Basándome en la información de Manuelita y considerando el historial:"""
             
             response = self.llm.invoke(prompt)
-            return response.content
+            # OllamaLLM devuelve string, OpenAI/Gemini devuelven objeto con .content
+            if isinstance(response, str):
+                return response
+            else:
+                return response.content
         except Exception as e:
             logger.error(f"Error generando respuesta: {e}")
             return "No pude generar una respuesta. Para asistencia, contáctanos al (602) 889 1444 o visita https://www.manuelita.com"
