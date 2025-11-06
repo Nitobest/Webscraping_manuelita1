@@ -1,0 +1,169 @@
+{
+  "contact": {
+    "locations": [
+      {
+        "name": "Manuelita Azúcar y Energía",
+        "address": "Km 7 via Palmira - El Cerrito",
+        "phone": null,
+        "email": null,
+        "fax": null,
+        "city": "Palmira",
+        "country": null
+      },
+      {
+        "name": "Agroindustrial Laredo",
+        "address": "Av Trujillo S/N - Zona Industrial - Laredo Trujillo - La Libertad - Perú",
+        "phone": null,
+        "email": null,
+        "fax": null,
+        "city": "Laredo",
+        "country": null
+      },
+      {
+        "name": "Manuelita Aceites y Energía",
+        "address": null,
+        "phone": "608-661-1666",
+        "email": null,
+        "fax": null,
+        "city": "Villavicencio",
+        "country": null
+      },
+      {
+        "name": "Mejillones América",
+        "address": "Ruta v 818 Huelmo Km3 Puerto Montt - Chile",
+        "phone": null,
+        "email": null,
+        "fax": null,
+        "city": "Puerto Montt",
+        "country": null
+      },
+      {
+        "name": "Océanos",
+        "address": null,
+        "phone": "605-677-8400",
+        "email": null,
+        "fax": null,
+        "city": "Cartagena",
+        "country": null
+      },
+      {
+        "name": "Manuelita",
+        "address": "Calle 6 #3 - 13, Cali, Colombia",
+        "phone": "602-889-1444",
+        "email": null,
+        "fax": null,
+        "city": "Cali",
+        "country": null
+      },
+      {
+        "name": "Plataforma Acuicultura\n\nEn esta plataforma",
+        "address": "Unidades de Negocio:\\- Manuelita Frutas y Hortalizas - Perú",
+        "phone": null,
+        "email": null,
+        "fax": null,
+        "city": "Cartagena",
+        "country": null
+      },
+      {
+        "name": "Plataforma Frutas y Hortalizas\n\nManuelita creó en el a",
+        "address": "Se encuentra ubicada en Ica, a 300 Km de Lima, Perú. Durante la campaña 2014 – 2015 tuvo una producción de 5.813 toneladas de uva de mesa.",
+        "phone": null,
+        "email": null,
+        "fax": null,
+        "city": "Cali",
+        "country": null
+      }
+    ],
+    "hours": {
+      "default": "8:00 AM - 5:00 PM (Horario de oficina estándar)",
+      "atencion": "integral, completamente gratuitas, desde el año 2017.",
+      "labor": "** (602) 3976060 Ext. 1201, al (602) 4443812 o al el e-mail [[email protected]](/cdn-cgi/l/email-protection)",
+      "nocturno": "** (602) 6878900 Ext. 1555, o a los celulares 316 8329655 o 315 4944432",
+      "error": "no such group"
+    },
+    "default_phone": null,
+    "default_email": null,
+    "default_address": "Km 7 via Palmira - El Cerrito"
+  },
+  "products": [
+    {
+      "name": "Azúcar",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Energía",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Producto",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Camarones",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Mejillones",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Palma",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Frutas",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Hortalizas",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Bioetanol",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Renovable",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Alimentos",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Azúcar Y Endulzantes",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Azúcar Industrial",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Biodiésel",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Frutas Y Hortalizas",
+      "category": "Alimentos y Energía",
+      "description": null
+    }
+  ],
+  "company_info": {
+    "nit": null,
+    "founded": null
+  }
+}
