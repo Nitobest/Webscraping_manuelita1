@@ -1,149 +1,169 @@
 {
   "contact": {
-    "default_phone": "(602) 889 1444",
-    "default_email": "contacto@manuelita.com",
-    "support_phone": "(602) 3976060 Ext. 1201",
-    "support_email": "soporte@manuelita.com",
-    "emergency_phone": "(602) 6878900 Ext. 1555",
-    "emergency_cellphones": ["316 8329655", "315 4944432"],
-    "hours": {
-      "monday_friday": "8:00 - 17:00",
-      "saturday": "Cerrado",
-      "sunday": "Cerrado"
-    },
     "locations": [
       {
-        "name": "Centro Corporativo Manuelita",
-        "address": "Calle 6 #3 - 13",
-        "city": "Cali",
-        "country": "Colombia",
-        "phone": "(602) 889 1444",
-        "type": "Corporativo"
-      },
-      {
         "name": "Manuelita Azúcar y Energía",
-        "address": "Km 7 vía Palmira - El Cerrito",
+        "address": "Km 7 via Palmira - El Cerrito",
+        "phone": null,
+        "email": null,
+        "fax": null,
         "city": "Palmira",
-        "state_province": "Valle del Cauca",
-        "country": "Colombia",
-        "phone": "(602) 890 0878",
-        "type": "Producción"
-      },
-      {
-        "name": "Manuelita Aceites y Energía",
-        "address": "Centro Comercial Villacentro Local 5 y 6",
-        "city": "Villavicencio",
-        "state_province": "Meta",
-        "country": "Colombia",
-        "phone": "PBX: (608) 6611666",
-        "type": "Oficina Regional"
-      },
-      {
-        "name": "Océanos",
-        "address": "Carretera Mamonal No. 1-504",
-        "city": "Cartagena",
-        "state_province": "Bolívar",
-        "country": "Colombia",
-        "phone": "PBX: (605) 677 8400",
-        "type": "Producción"
+        "country": null
       },
       {
         "name": "Agroindustrial Laredo",
-        "address": "Av Trujillo S/N - Zona Industrial",
+        "address": "Av Trujillo S/N - Zona Industrial - Laredo Trujillo - La Libertad - Perú",
+        "phone": null,
+        "email": null,
+        "fax": null,
         "city": "Laredo",
-        "state_province": "La Libertad",
-        "country": "Perú",
-        "phone": "445028 - 435010",
-        "type": "Producción"
+        "country": null
       },
       {
-        "name": "Manuelita Frutas y Hortalizas",
-        "address": "Av. Nicolás Arriola 314 Of. 1103-B Urb. Santa Catalina La Victoria",
-        "city": "Lima",
-        "country": "Perú",
-        "phone": "(51-1) 225 2252",
-        "type": "Oficina"
+        "name": "Manuelita Aceites y Energía",
+        "address": null,
+        "phone": "608-661-1666",
+        "email": null,
+        "fax": null,
+        "city": "Villavicencio",
+        "country": null
       },
       {
         "name": "Mejillones América",
-        "address": "Ruta 5 Huelmo Km 3",
+        "address": "Ruta v 818 Huelmo Km3 Puerto Montt - Chile",
+        "phone": null,
+        "email": null,
+        "fax": null,
         "city": "Puerto Montt",
-        "state_province": "Los Lagos",
-        "country": "Chile",
-        "phone": "(56-65) 772 039",
-        "type": "Producción"
+        "country": null
+      },
+      {
+        "name": "Océanos",
+        "address": null,
+        "phone": "605-677-8400",
+        "email": null,
+        "fax": null,
+        "city": "Cartagena",
+        "country": null
+      },
+      {
+        "name": "Manuelita",
+        "address": "Calle 6 #3 - 13, Cali, Colombia",
+        "phone": "602-889-1444",
+        "email": null,
+        "fax": null,
+        "city": "Cali",
+        "country": null
+      },
+      {
+        "name": "Plataforma Acuicultura\n\nEn esta plataforma",
+        "address": "Unidades de Negocio:\\- Manuelita Frutas y Hortalizas - Perú",
+        "phone": null,
+        "email": null,
+        "fax": null,
+        "city": "Cartagena",
+        "country": null
+      },
+      {
+        "name": "Plataforma Frutas y Hortalizas\n\nManuelita creó en el a",
+        "address": "Se encuentra ubicada en Ica, a 300 Km de Lima, Perú. Durante la campaña 2014 – 2015 tuvo una producción de 5.813 toneladas de uva de mesa.",
+        "phone": null,
+        "email": null,
+        "fax": null,
+        "city": "Cali",
+        "country": null
       }
-    ]
+    ],
+    "hours": {
+      "default": "8:00 AM - 5:00 PM (Horario de oficina estándar)",
+      "atencion": "integral, completamente gratuitas, desde el año 2017.",
+      "labor": "** (602) 3976060 Ext. 1201, al (602) 4443812 o al el e-mail [[email protected]](/cdn-cgi/l/email-protection)",
+      "nocturno": "** (602) 6878900 Ext. 1555, o a los celulares 316 8329655 o 315 4944432",
+      "error": "no such group"
+    },
+    "default_phone": null,
+    "default_email": null,
+    "default_address": "Km 7 via Palmira - El Cerrito"
   },
   "products": [
     {
-      "id": "prod_sugar_001",
-      "name": "Azúcar y Endulzantes",
-      "description": "Azúcar de alta calidad producida en nuestras instalaciones en Palmira",
-      "category": "Alimentos",
-      "subcategory": "Azúcar",
-      "origin": "Colombia"
+      "name": "Azúcar",
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_sugar_002",
-      "name": "Azúcar Industrial",
-      "description": "Azúcar industrial para aplicaciones de manufactura",
-      "category": "Alimentos",
-      "subcategory": "Azúcar Industrial",
-      "origin": "Colombia"
+      "name": "Energía",
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_fruits_001",
-      "name": "Uvas de Mesa - Variedades Flame, Sugraone, Red Globe, Crimson",
-      "description": "Uvas de alta calidad producidas en Ica, Perú. Comercializadas con marcas Manuelita e Inka Grapes a mercados en Europa, Estados Unidos y Asia",
-      "category": "Alimentos",
-      "subcategory": "Frutas y Hortalizas",
-      "origin": "Perú",
-      "market_reach": ["Europa", "Estados Unidos", "Asia"]
+      "name": "Producto",
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_seafood_001",
       "name": "Camarones",
-      "description": "Camarones frescos y de calidad",
-      "category": "Alimentos",
-      "subcategory": "Mariscos",
-      "origin": "Colombia"
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_seafood_002",
       "name": "Mejillones",
-      "description": "Mejillones frescos producidos en Puerto Montt, Chile",
-      "category": "Alimentos",
-      "subcategory": "Mariscos",
-      "origin": "Chile"
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_energy_001",
+      "name": "Palma",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Frutas",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Hortalizas",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
       "name": "Bioetanol",
-      "description": "Biocombustible renovable derivado de la caña",
-      "category": "Energía Renovable",
-      "subcategory": "Derivados de caña"
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_energy_002",
-      "name": "Biodiesel",
-      "description": "Biocombustible derivado de palma",
-      "category": "Energía Renovable",
-      "subcategory": "Derivados de palma"
+      "name": "Renovable",
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_derivatives_001",
-      "name": "Derivados de la Caña",
-      "description": "Productos derivados del procesamiento de caña de azúcar",
-      "category": "Productos Industriales",
-      "subcategory": "Derivados agrícolas"
+      "name": "Alimentos",
+      "category": "Alimentos y Energía",
+      "description": null
     },
     {
-      "id": "prod_derivatives_002",
-      "name": "Derivados de Palma",
-      "description": "Productos derivados del procesamiento de palma",
-      "category": "Productos Industriales",
-      "subcategory": "Derivados agrícolas"
+      "name": "Azúcar Y Endulzantes",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Azúcar Industrial",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Biodiésel",
+      "category": "Alimentos y Energía",
+      "description": null
+    },
+    {
+      "name": "Frutas Y Hortalizas",
+      "category": "Alimentos y Energía",
+      "description": null
     }
-  ]
+  ],
+  "company_info": {
+    "nit": null,
+    "founded": null
+  }
 }

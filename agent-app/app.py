@@ -71,16 +71,34 @@ def stream_response(text: str, speed_ms: int = 50) -> None:
         placeholder.markdown(f"{config.streaming.icon} {streamed_text}")
         time.sleep(delay_sec)
 
-def process_user_input(question: str) -> Dict[str, Any]:
-    """Procesa entrada del usuario sin guardar en memoria (se guarda en app.py)."""
+def process_user_input(question: str, memory_context: str = "") -> Dict[str, Any]:
+    """Procesa entrada del usuario.
+    
+    Args:
+        question: Pregunta del usuario
+        memory_context: Contexto de memoria de la conversación actual
+    """
     try:
+        # Inyectar memoria de conversación en el agente temporalmente
+        original_memory_context = st.session_state.agent.get_memory_context()
+        
+        # Si hay contexto de conversación, usarlo para generar respuesta
+        if memory_context:
+            # Modificar temporalmente get_memory_context para devolver el contexto actual
+            st.session_state.agent.get_memory_context = lambda: memory_context
+        
         result = st.session_state.agent.process(
             question=question,
-            use_memory=False,  # No guardar aquí, se guarda en app.py con conversación correcta
+            use_memory=False,  # No usar memoria del agente, pasamos contexto manualmente
             temperature=config.llm.temperature,
             top_k=config.llm.top_k,
             max_tokens=config.llm.max_tokens
         )
+        
+        # Restaurar método original
+        if memory_context:
+            st.session_state.agent.get_memory_context = lambda: original_memory_context
+        
         return result
     except Exception as e:
         logger.error(f"Error procesando input: {e}")
@@ -468,7 +486,9 @@ def page_chat():
         # Procesar
         with st.chat_message("assistant"):
             with st.spinner("Procesando..."):
-                result = process_user_input(user_input)
+                # Pasar contexto de memoria de la conversación actual
+                memory_ctx = current_conv_memory.get_conversation_context()
+                result = process_user_input(user_input, memory_context=memory_ctx)
             
             # Guardar en la memoria de la conversación actual
             if result['success']:
