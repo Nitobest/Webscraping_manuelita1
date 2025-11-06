@@ -8,6 +8,7 @@ install: setup
 
 # Pipeline operations using new AI engineering structure
 pipeline-full:
+	--> uv run python -m manuelita_scraper.cli pipeline --type full
 	uv run python -m manuelita_scraper.cli pipeline --type full --env development
 
 pipeline-corporate:
@@ -25,9 +26,11 @@ extract-news:
 
 # Content cleaning operations
 clean-corporate:
+	--> uv run python -m manuelita_scraper.cli clean --input-dir data/raw/processed/corporate --output-dir data/cleaned/corporate --type corporate
 	uv run python -m manuelita_scraper.cli clean --input-dir manuelita_content --output-dir data/cleaned/corporate --type corporate
 
 clean-news:
+	--> uv run python -m manuelita_scraper.cli clean --input-dir data/raw/processed/news --output-dir data/cleaned/news --type news
 	uv run python -m manuelita_scraper.cli clean --input-dir manuelita_news_content --output-dir data/cleaned/news --type news
 
 # Pipeline status and monitoring

@@ -14,19 +14,10 @@
 **Manuelita Scraper** es un pipeline de web scraping inteligente que automatiza la extracción, transformación y carga (ETL) de contenido corporativo desde la presencia web de Manuelita. Este proyecto demuestra excelencia técnica en **selección de modelos muy adecuada**, **prompts altamente creativos y eficaces**, **implementación sobresaliente de frameworks** con **integración completamente fluida**, y **documentación exhaustiva del proceso**.
 
 ### 🔍 **Problemática & Solución**
-- **Problema**: Extracción manual ineficiente de contenido corporativo disperso
+- **Problema**: Ausencia de un proceso dinámico para la disposición del a información base de conocimiento de Manuealita S.A.
 - **Solución**: Pipeline automatizado con IA que procesa contenido web de forma inteligente
 - **Resultado**: Sistema robusto, escalable y replicable.
 
-### 🏆 **Logros Según Rubric**
-| Criterio | Implementación | Resultado |
-|----------|----------------|-----------|
-| **Selección de Modelo** | BeautifulSoup4+lxml, Session Management | 40% más rápido, 96.8% precisión |
-| **Prompts Creativos** | "Digital Chameleon", "Hidden Gems" | 75% mejora rendimiento |
-| **Framework Integration** | Microservicios, Dependency Injection | 9.8/10 efficiency score |
-| **Documentación** | Proceso exhaustivo, métricas detalladas | 100% coverage, optimización medible |
-
----
 
 ## 🏗️ Arquitectura Principal
 
@@ -68,25 +59,6 @@ El proyecto integra un **pipeline de web scraping** con un **sistema RAG (Retrie
                         └───────────────────┘
 ```
 
-### **Vista de Alto Nivel**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   EXTRACTORS    │───▶│  TRANSFORMERS   │───▶│    LOADERS      │
-│ • Web Scraping  │    │ • Content Clean │    │ • File Output   │
-│ • Session Mgmt  │    │ • Data Process  │    │ • Metadata Gen  │
-│ • Rate Limiting │    │ • Format Conv   │    │ • Organization  │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         ▲                        ▲                        ▲
-         └────────────────────────┼────────────────────────┘
-                                  │
-                        ┌─────────▼─────────┐
-                        │     PIPELINE      │
-                        │ • Orchestration   │
-                        │ • Configuration   │
-                        │ • Error Handling  │
-                        └───────────────────┘
-```
-
 ### **Componentes Clave**
 - **Pipeline ETL**: Orquestación completa del flujo Extract-Transform-Load
 - **Extractors**: Web scraping inteligente con detección de contenido
@@ -120,7 +92,8 @@ Webscraping_manuelita1/
 ├── 📁 configs/                    # Archivos de configuración
 │   └── 📄 development.yaml        # Configuración desarrollo
 ├── 📁 data/                       # Directorio datos de salida
-│   └── 📁 raw/                    # Contenido procesado para RAG
+│   └── 📁 raw/                    # Contenido raw que pasa a cleaned
+│   └── 📁 cleaned/                # Contenido cleaned para RAG
 ├── 📁 rag/                        # Sistema RAG Intelligence
 │   ├── 📄 app.py                  # Aplicación RAG con Gradio
 │   └── 📄 requirements.txt       # Dependencias RAG
@@ -132,8 +105,19 @@ Webscraping_manuelita1/
 ```
 
 ---
+## Pipeline para la extracción del webscraping
 
-## 🧠 Sistema RAG Intelligence
+
+### **Extracción:** 
+Se navega con requests usando sesiones persistentes, rotación de user-agent y rate limiting con backoff. Se descubren URLs (sitemaps/patrones), se aplican reglas por tipo de contenido (corporate/news) y se obtiene el HTML. El parsing se hace con BeautifulSoup4+lxml; hay reintentos, timeouts y logging de errores.
+
+### **Transformación:** 
+El HTML se limpia y normaliza (UTF-8), se convierte a texto/markdown con html2text y se eliminan elementos de navegación, scripts y estilos. Se extraen metadatos (título, fecha, fuente, categoría), se valida el esquema con Pydantic, se segmenta por encabezados (#, ##, ###) y se deduplica por hash.
+
+### **Carga:**
+Se guarda el contenido en estructura organizada por tipo/fecha/fuente, con archivos .md y un .json de metadata por documento. Se mantiene nomenclatura consistente, versionado y logs; se generan índices y copias en data/raw/ para alimentar el RAG. El proceso es idempotente y deja trazabilidad para auditoría.
+
+## Sistema RAG Intelligence
 
 ### **Arquitectura RAG Avanzada**
 
@@ -291,108 +275,3 @@ python app.py
    ✅ Loaded 2 files
 🎉 Demo completed successfully!
 ```
-
----
-
-## 🛠️ Stack Tecnológico
-
-### **Tecnologías Core - Web Scraping**
-- **Python 3.9+**: Lenguaje principal
-- **BeautifulSoup4 + lxml**: Parsing HTML optimizado (40% más rápido)
-- **Requests**: Cliente HTTP con session management
-- **Pydantic**: Validación de datos y configuración
-- **Structlog**: Logging estructurado para monitoring
-
-### **Tecnologías RAG Intelligence**
-- **LangChain**: Framework RAG y orquestación de LLM
-- **Google Gemini 2.5 Pro**: Modelo de lenguaje principal
-- **Chroma**: Base de datos vectorial
-- **Sentence Transformers**: Embeddings semánticos (all-MiniLM-L6-v2)
-- **BM25**: Algoritmo de búsqueda por palabras clave
-- **Cross-Encoder**: Re-ranking con BAAI/bge-reranker-base
-- **Gradio**: Interfaz de usuario conversacional
-
-### **Frameworks & Tools**
-- **Click**: Framework CLI profesional
-- **PyYAML**: Gestión de configuración
-- **UV**: Gestor de paquetes moderno
-- **Pytest**: Framework de testing
-
----
-
-## 📈 Métricas de Rendimiento
-
-### **Optimizaciones Logradas**
-```
-Antes → Después (Mejora)
-─────────────────────────
-Tiempo respuesta: 2.4s → 0.6s (75% ⬇️)
-Tasa de éxito: 87% → 98.5% (13% ⬆️)  
-Uso memoria: 450MB → 180MB (60% ⬇️)
-Uso CPU: 78% → 32% (59% ⬇️)
-```
-
-### **Scores de Calidad**
-- **Model Selection**: 96.8% precisión clasificación
-- **Creative Prompts**: 75% mejora rendimiento comprobada
-- **Framework Integration**: 9.8/10 efficiency score
-- **RAG System**: Anti-alucinación + Búsqueda Híbrida
-- **Process Documentation**: 100% coverage con métricas
-
----
-
-## 💡 Innovaciones Técnicas
-
-### **Prompts Creativos Destacados**
-1. **"Be a Digital Chameleon"** - Sistema anti-detección dinámico
-2. **"Find Hidden Gems"** - Descubrimiento de contenido no obvio
-3. **"Understand Like a Human"** - Extracción consciente del contexto
-
-### **Implementación Sobresaliente**
-- **Zero Configuration Conflicts**: Dependencias perfectamente alineadas
-- **Hot-Swappable Components**: Reemplazo de componentes en runtime
-- **Graceful Degradation**: Modos de operación tolerantes a fallos
-- **Auto-Discovery**: Carga dinámica de módulos
-
----
-
-## 🎓 Valor Educativo
-
-Este proyecto demuestra:
-
-### **Principios de Ingeniería de Software**
-- Arquitectura limpia con separación de responsabilidades
-- Implementación de principios SOLID
-- Inyección de dependencias y inversión de control
-
-### **Prácticas de Data Engineering**  
-- Diseño e implementación de pipeline ETL
-- Validación de datos y aseguramiento de calidad
-- Logging estructurado y monitoring
-
-### **Desarrollo Python Moderno**
-- Type hints y análisis estático
-- Gestión de paquetes con pyproject.toml
-- Desarrollo CLI con Click
-- Patrones de gestión de configuración
-
----
-
-## 🎯 Destacados para Presentación
-
-### **Puntos Clave de Conversación**
-1. **Selección Óptima**: Cada modelo elegido con justificación técnica y métricas
-2. **Innovación Creativa**: Prompts que van beyond lo obvio con resultados medibles
-3. **Excelencia Técnica**: Integración fluida que alcanza estándares profesionales
-4. **Sistema RAG Avanzado**: Búsqueda híbrida + anti-alucinación con Gemini 2.5 Pro
-5. **Documentación Rigurosa**: Proceso exhaustivo con tracking detallado de optimizaciones
-
-### **Demo Flow Sugerido**
-1. Mostrar estructura del proyecto y organización completa (scraping + RAG)
-2. Ejecutar `python example_usage.py` para demostración pipeline ETL
-3. Explicar componentes clave usando diagrama de arquitectura integrada
-4. Demostrar sistema RAG: `cd rag/ && python app.py`
-5. Mostrar interfaz conversacional Gradio en acción
-6. Mostrar capacidades de interfaz CLI del scraper
-7. Discutir métricas de rendimiento y configuraciones avanzadas
-
