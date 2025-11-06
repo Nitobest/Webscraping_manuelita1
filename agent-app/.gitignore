@@ -4,6 +4,10 @@
 .env.*.local
 *.key
 
+# ChromaDB and vector databases
+vectordb/
+*.db
+
 # Python
 __pycache__/
 *.py[cod]
@@ -36,10 +40,6 @@ ENV/
 .idea/
 *.swp
 *.swo
-
-# Database
-vectordb/
-*.db
 
 # Logs
 logs/
