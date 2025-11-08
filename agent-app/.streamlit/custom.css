@@ -1,0 +1,97 @@
+/* Colores Corporativos Manuelita */
+:root {
+    --manuelita-verde: #00A651;
+    --manuelita-verde-oscuro: #008C45;
+    --manuelita-blanco: #FFFFFF;
+    --manuelita-gris-claro: #F8F9FA;
+    --manuelita-texto: #3D5A4C;  /* Gris verdoso */
+    --manuelita-texto-suave: #5A7A6B;  /* Gris verdoso más claro */
+}
+
+/* Botones primarios con estilo Manuelita */
+.stButton > button {
+    background: linear-gradient(135deg, var(--manuelita-verde) 0%, var(--manuelita-verde-oscuro) 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 166, 81, 0.2);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 166, 81, 0.3);
+}
+
+/* Métricas con borde verde */
+div[data-testid="stMetric"] {
+    background-color: var(--manuelita-gris-claro);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--manuelita-verde);
+}
+
+/* Tabs con color verde */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: var(--manuelita-gris-claro);
+    border-radius: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: var(--manuelita-texto);
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--manuelita-verde) !important;
+    color: white !important;
+    border-radius: 8px;
+}
+
+/* Chat input con borde verde */
+.stChatInput > div {
+    border-color: var(--manuelita-verde);
+}
+
+/* Success/Info messages con verde Manuelita */
+.stSuccess {
+    background-color: rgba(0, 166, 81, 0.1);
+    border-left-color: var(--manuelita-verde);
+}
+
+/* Sidebar con sutil toque verde */
+section[data-testid="stSidebar"] {
+    background-color: var(--manuelita-gris-claro);
+}
+
+/* Radio buttons con verde y mejor tipografía */
+.stRadio > label > div[data-baseweb="radio"] > div {
+    border-color: var(--manuelita-verde);
+}
+
+.stRadio > label > div[data-baseweb="radio"] > div[data-checked="true"] {
+    background-color: var(--manuelita-verde);
+}
+
+/* Mejorar tipografía de opciones de radio */
+.stRadio label {
+    font-weight: 600 !important;
+    font-size: 1.05rem !important;
+    color: var(--manuelita-texto) !important;
+    padding: 0.75rem 1rem !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+}
+
+.stRadio label:hover {
+    background-color: rgba(0, 166, 81, 0.05) !important;
+    transform: translateX(4px) !important;
+}
+
+/* Opción seleccionada con fondo verde */
+.stRadio label:has(input:checked) {
+    background-color: rgba(0, 166, 81, 0.15) !important;
+    border-left: 4px solid var(--manuelita-verde) !important;
+    font-weight: 700 !important;
+}

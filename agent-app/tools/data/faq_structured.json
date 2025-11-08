@@ -1,169 +1,333 @@
 {
+  "metadata": {
+    "version": "2.0",
+    "last_updated": "2025-01-08",
+    "source": "Manuelita Official Data"
+  },
+  "company_info": {
+    "name": "Manuelita S.A.",
+    "founded": 1864,
+    "years_active": 161,
+    "nit": "890-300-406-4",
+    "headquarters": "Cali, Colombia",
+    "website": "https://www.manuelita.com",
+    "slogan": "Más de 160 años generando valor sostenible",
+    "employees": 4500,
+    "countries": ["Colombia", "Perú", "Chile", "Brasil"],
+    "certifications": [
+      "ISO 9001",
+      "ISO 14001",
+      "FSSC 22000",
+      "Bonsucro",
+      "ISCC"
+    ]
+  },
   "contact": {
+    "main_office": {
+      "name": "Centro Corporativo Manuelita",
+      "address": "Calle 6 # 3-13, Piso 9",
+      "city": "Cali",
+      "state": "Valle del Cauca",
+      "country": "Colombia",
+      "postal_code": "760001",
+      "phone": "+57 (602) 889-1444",
+      "whatsapp": "+57 316-832-9655",
+      "email": "[email protected]",
+      "website": "https://www.manuelita.com"
+    },
+    "hours": {
+      "office": "Lunes a Viernes: 8:00 AM - 5:00 PM",
+      "customer_service": "Lunes a Sábado: 8:00 AM - 6:00 PM",
+      "emergency_line": "24/7 - Línea Ética: +57 (602) 397-6060 Ext. 1201"
+    },
     "locations": [
       {
+        "id": 1,
         "name": "Manuelita Azúcar y Energía",
-        "address": "Km 7 via Palmira - El Cerrito",
-        "phone": null,
-        "email": null,
-        "fax": null,
+        "business_unit": "Azúcar y Bioenergía",
+        "address": "Km 7 Vía Palmira - El Cerrito",
         "city": "Palmira",
-        "country": null
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "phone": "+57 (602) 336-5000",
+        "email": "[email protected]",
+        "capacity": "1.2 millones de toneladas de caña/año",
+        "products": ["Azúcar refinada", "Azúcar cruda", "Bioetanol", "Energía eléctrica"]
       },
       {
+        "id": 2,
         "name": "Agroindustrial Laredo",
-        "address": "Av Trujillo S/N - Zona Industrial - Laredo Trujillo - La Libertad - Perú",
-        "phone": null,
-        "email": null,
-        "fax": null,
+        "business_unit": "Azúcar y Bioenergía",
+        "address": "Av. Trujillo S/N - Zona Industrial",
         "city": "Laredo",
-        "country": null
+        "state": "La Libertad",
+        "country": "Perú",
+        "phone": "+51 (44) 479-400",
+        "email": "[email protected]",
+        "capacity": "900,000 toneladas de caña/año",
+        "products": ["Azúcar refinada", "Azúcar rubia", "Melaza", "Alcohol etilico"]
       },
       {
+        "id": 3,
         "name": "Manuelita Aceites y Energía",
-        "address": null,
-        "phone": "608-661-1666",
-        "email": null,
-        "fax": null,
+        "business_unit": "Aceites y Biodiésel",
+        "address": "Vereda Apiay - Km 3 Vía Puerto López",
         "city": "Villavicencio",
-        "country": null
+        "state": "Meta",
+        "country": "Colombia",
+        "phone": "+57 (608) 661-1666",
+        "email": "[email protected]",
+        "capacity": "35,000 hectáreas de palma",
+        "products": ["Aceite de palma crudo", "Biodiésel", "Palmiste", "Compost orgánico"]
       },
       {
+        "id": 4,
+        "name": "Océanos - Cultivo de Camarón",
+        "business_unit": "Acuicultura",
+        "address": "Zona Rural de Arjona",
+        "city": "Cartagena",
+        "state": "Bolívar",
+        "country": "Colombia",
+        "phone": "+57 (605) 677-8400",
+        "email": "[email protected]",
+        "capacity": "1,200 hectáreas de cultivo",
+        "products": ["Camarón Vannamei fresco", "Camarón congelado", "Camarón valor agregado"]
+      },
+      {
+        "id": 5,
         "name": "Mejillones América",
-        "address": "Ruta v 818 Huelmo Km3 Puerto Montt - Chile",
-        "phone": null,
-        "email": null,
-        "fax": null,
+        "business_unit": "Acuicultura",
+        "address": "Ruta V-818 Huelmo Km 3",
         "city": "Puerto Montt",
-        "country": null
+        "state": "Región de Los Lagos",
+        "country": "Chile",
+        "phone": "+56 (65) 248-1000",
+        "email": "[email protected]",
+        "capacity": "8,000 toneladas/año",
+        "products": ["Mejillones frescos", "Mejillones congelados", "Mejillones ahumados"]
       },
       {
-        "name": "Océanos",
-        "address": null,
-        "phone": "605-677-8400",
-        "email": null,
-        "fax": null,
-        "city": "Cartagena",
-        "country": null
+        "id": 6,
+        "name": "Manuelita Frutas y Hortalizas - Ica",
+        "business_unit": "Frutas y Hortalizas",
+        "address": "Fundo La Catalina - Sector Pampa de Villacurí",
+        "city": "Ica",
+        "state": "Ica",
+        "country": "Perú",
+        "phone": "+51 (56) 213-600",
+        "email": "[email protected]",
+        "capacity": "400 hectáreas",
+        "products": ["Uvas de mesa", "Mangos", "Paltas", "Arándanos"]
+      }
+    ]
+  },
+  "products": {
+    "sugar": [
+      {
+        "id": "AZ-001",
+        "name": "Azúcar Refinada Manuelita",
+        "category": "Azúcar de Mesa",
+        "description": "Azúcar blanca refinada de alta pureza para consumo directo",
+        "presentations": ["500g", "1kg", "2kg", "5kg", "50kg"],
+        "uses": ["Repostería", "Endulzante de bebidas", "Conservas"],
+        "certifications": ["FSSC 22000", "Kosher", "Halal"],
+        "origin": "Colombia"
       },
       {
-        "name": "Manuelita",
-        "address": "Calle 6 #3 - 13, Cali, Colombia",
-        "phone": "602-889-1444",
-        "email": null,
-        "fax": null,
-        "city": "Cali",
-        "country": null
+        "id": "AZ-002",
+        "name": "Azúcar Morena Manuelita",
+        "category": "Azúcar de Mesa",
+        "description": "Azúcar con melaza natural, sabor intenso y color dorado",
+        "presentations": ["500g", "1kg", "2kg"],
+        "uses": ["Repostería artesanal", "Bebidas calientes"],
+        "certifications": ["FSSC 22000"],
+        "origin": "Colombia"
       },
       {
-        "name": "Plataforma Acuicultura\n\nEn esta plataforma",
-        "address": "Unidades de Negocio:\\- Manuelita Frutas y Hortalizas - Perú",
-        "phone": null,
-        "email": null,
-        "fax": null,
-        "city": "Cartagena",
-        "country": null
+        "id": "AZ-003",
+        "name": "Azúcar Industrial",
+        "category": "Azúcar Industrial",
+        "description": "Azúcar para procesos industriales de alimentos y bebidas",
+        "presentations": ["Saco 50kg", "Big bag 1 ton", "A granel"],
+        "uses": ["Industria de bebidas", "Confitería", "Panificación"],
+        "certifications": ["ISO 9001", "FSSC 22000", "Bonsucro"],
+        "origin": "Colombia y Perú"
       },
       {
-        "name": "Plataforma Frutas y Hortalizas\n\nManuelita creó en el a",
-        "address": "Se encuentra ubicada en Ica, a 300 Km de Lima, Perú. Durante la campaña 2014 – 2015 tuvo una producción de 5.813 toneladas de uva de mesa.",
-        "phone": null,
-        "email": null,
-        "fax": null,
-        "city": "Cali",
-        "country": null
+        "id": "AZ-004",
+        "name": "Azúcar Líquida",
+        "category": "Azúcar Industrial",
+        "description": "Jarabe de azúcar invertida para procesos industriales",
+        "presentations": ["Tanque 1000L", "IBC 1000L", "A granel"],
+        "concentration": "67 Brix",
+        "uses": ["Bebidas embotelladas", "Panificación industrial"],
+        "certifications": ["FSSC 22000"],
+        "origin": "Colombia"
       }
     ],
-    "hours": {
-      "default": "8:00 AM - 5:00 PM (Horario de oficina estándar)",
-      "atencion": "integral, completamente gratuitas, desde el año 2017.",
-      "labor": "** (602) 3976060 Ext. 1201, al (602) 4443812 o al el e-mail [[email protected]](/cdn-cgi/l/email-protection)",
-      "nocturno": "** (602) 6878900 Ext. 1555, o a los celulares 316 8329655 o 315 4944432",
-      "error": "no such group"
-    },
-    "default_phone": "608-661-1666",
-    "default_email": "[email protected]",
-    "default_address": "Km 7 via Palmira - El Cerrito"
+    "bioenergy": [
+      {
+        "id": "BE-001",
+        "name": "Bioetanol Anhidro",
+        "category": "Biocombustibles",
+        "description": "Etanol de caña de azúcar para mezcla con gasolina",
+        "purity": "99.5%",
+        "capacity": "360,000 litros/día",
+        "uses": ["Mezcla E10", "Industria química"],
+        "certifications": ["ISCC", "Bonsucro"],
+        "emission_reduction": "70% vs gasolina fósil"
+      },
+      {
+        "id": "BE-002",
+        "name": "Biodiésel B100",
+        "category": "Biocombustibles",
+        "description": "Diésel renovable de aceite de palma",
+        "purity": "99%",
+        "capacity": "120,000 toneladas/año",
+        "uses": ["Mezcla B10", "Transporte pesado"],
+        "certifications": ["ISCC", "EPA"],
+        "emission_reduction": "80% vs diésel fósil"
+      },
+      {
+        "id": "BE-003",
+        "name": "Energía Eléctrica Renovable",
+        "category": "Energía",
+        "description": "Electricidad generada con bagazo de caña",
+        "capacity": "110 MW",
+        "annual_generation": "600 GWh/año",
+        "source": "Cogeneración con bagazo",
+        "impact": "Abastece 180,000 hogares"
+      }
+    ],
+    "aquaculture": [
+      {
+        "id": "AC-001",
+        "name": "Camarón Vannamei Fresco",
+        "category": "Mariscos",
+        "description": "Camarón cultivado en Colombia con estándares de sostenibilidad",
+        "presentations": ["Entero", "Pelado", "Pelado y desvenado"],
+        "sizes": ["U/10", "16/20", "21/25", "26/30", "31/40"],
+        "certifications": ["BAP", "ASC"],
+        "origin": "Cartagena, Colombia"
+      },
+      {
+        "id": "AC-002",
+        "name": "Mejillones Frescos",
+        "category": "Mariscos",
+        "description": "Mejillones chilenos de cultivo sustentable",
+        "presentations": ["Media concha", "Carne cocida", "Ahumados"],
+        "sizes": ["Medio", "Grande", "Extra grande"],
+        "certifications": ["ASC", "MSC"],
+        "origin": "Puerto Montt, Chile"
+      }
+    ],
+    "fruits": [
+      {
+        "id": "FR-001",
+        "name": "Uvas de Mesa",
+        "category": "Frutas Frescas",
+        "description": "Uvas de exportación cultivadas en Perú",
+        "varieties": ["Red Globe", "Crimson Seedless", "Thompson Seedless"],
+        "season": "Diciembre - Marzo",
+        "production": "6,000 toneladas/año",
+        "markets": ["USA", "Europa", "Asia"],
+        "certifications": ["GlobalGAP", "GRASP"]
+      },
+      {
+        "id": "FR-002",
+        "name": "Mangos",
+        "category": "Frutas Frescas",
+        "description": "Mangos Kent de alta calidad",
+        "varieties": ["Kent", "Haden"],
+        "season": "Noviembre - Febrero",
+        "production": "2,500 toneladas/año",
+        "markets": ["Europa", "USA"],
+        "certifications": ["GlobalGAP"]
+      }
+    ]
   },
-  "products": [
+  "faq": [
     {
-      "name": "Azúcar",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 1,
+      "question": "¿Cuál es el horario de atención?",
+      "answer": "Nuestro horario de atención en oficinas es de Lunes a Viernes de 8:00 AM a 5:00 PM. El servicio al cliente está disponible de Lunes a Sábado de 8:00 AM a 6:00 PM. Para emergencias, nuestra Línea Ética está disponible 24/7 al +57 (602) 397-6060 Ext. 1201.",
+      "category": "contacto",
+      "keywords": ["horario", "atención", "oficina", "hora"]
     },
     {
-      "name": "Energía",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 2,
+      "question": "¿Cómo puedo contactar a Manuelita?",
+      "answer": "Puedes contactarnos en el Centro Corporativo: Teléfono +57 (602) 889-1444, WhatsApp +57 316-832-9655, Email [email protected], o visitar www.manuelita.com",
+      "category": "contacto",
+      "keywords": ["contacto", "teléfono", "email", "comunicar"]
     },
     {
-      "name": "Producto",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 3,
+      "question": "¿Dónde está ubicada la sede principal?",
+      "answer": "Nuestra sede principal está en Cali, Colombia: Calle 6 # 3-13, Piso 9, Cali, Valle del Cauca, Colombia.",
+      "category": "contacto",
+      "keywords": ["ubicación", "sede", "dirección", "oficina"]
     },
     {
-      "name": "Camarones",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 4,
+      "question": "¿Qué productos ofrece Manuelita?",
+      "answer": "Ofrecemos: Azúcar refinada y morena, Azúcar industrial, Bioetanol y Biodiésel, Energía eléctrica renovable, Aceite de palma, Camarones y mejillones, Uvas y mangos de exportación.",
+      "category": "productos",
+      "keywords": ["productos", "azúcar", "bioetanol", "camarón", "frutas"]
     },
     {
-      "name": "Mejillones",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 5,
+      "question": "¿Cuántos años tiene Manuelita?",
+      "answer": "Manuelita fue fundada en 1864, tenemos más de 161 años de historia generando valor sostenible.",
+      "category": "empresa",
+      "keywords": ["historia", "años", "fundación", "antigüedad"]
     },
     {
-      "name": "Palma",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 6,
+      "question": "¿En qué países opera Manuelita?",
+      "answer": "Operamos en 4 países: Colombia, Perú, Chile y Brasil, con presencia en los sectores de azúcar, bioenergía, acuicultura y frutas.",
+      "category": "empresa",
+      "keywords": ["países", "operaciones", "internacional", "presencia"]
     },
     {
-      "name": "Frutas",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 7,
+      "question": "¿Qué certificaciones tiene Manuelita?",
+      "answer": "Contamos con certificaciones ISO 9001, ISO 14001, FSSC 22000, Bonsucro, ISCC, GlobalGAP, BAP, ASC, entre otras, garantizando calidad y sostenibilidad.",
+      "category": "empresa",
+      "keywords": ["certificaciones", "calidad", "estándares", "ISO"]
     },
     {
-      "name": "Hortalizas",
-      "category": "Alimentos y Energía",
-      "description": null
-    },
-    {
-      "name": "Bioetanol",
-      "category": "Alimentos y Energía",
-      "description": null
-    },
-    {
-      "name": "Renovable",
-      "category": "Alimentos y Energía",
-      "description": null
-    },
-    {
-      "name": "Alimentos",
-      "category": "Alimentos y Energía",
-      "description": null
-    },
-    {
-      "name": "Azúcar Y Endulzantes",
-      "category": "Alimentos y Energía",
-      "description": null
-    },
-    {
-      "name": "Azúcar Industrial",
-      "category": "Alimentos y Energía",
-      "description": null
-    },
-    {
-      "name": "Biodiésel",
-      "category": "Alimentos y Energía",
-      "description": null
-    },
-    {
-      "name": "Frutas Y Hortalizas",
-      "category": "Alimentos y Energía",
-      "description": null
+      "id": 8,
+      "question": "¿Cómo puedo comprar azúcar Manuelita?",
+      "answer": "Para compras al por mayor, contacta [email protected] o +57 (602) 336-5000. Nuestros productos también están disponibles en supermercados y distribuidores autorizados.",
+      "category": "ventas",
+      "keywords": ["comprar", "azúcar", "ventas", "distribuidor"]
     }
   ],
-  "company_info": {
-    "nit": null,
-    "founded": null
-  }
+  "business_units": [
+    {
+      "name": "Azúcar y Bioenergía",
+      "description": "Producción de azúcar refinada, bioetanol y energía renovable",
+      "locations": ["Palmira (Colombia)", "Laredo (Perú)"],
+      "capacity": "2.1 millones toneladas caña/año"
+    },
+    {
+      "name": "Aceites y Biodiésel",
+      "description": "Cultivo de palma, producción de aceite y biodiésel",
+      "locations": ["Villavicencio (Colombia)"],
+      "capacity": "35,000 hectáreas"
+    },
+    {
+      "name": "Acuicultura",
+      "description": "Cultivo sostenible de camarones y mejillones",
+      "locations": ["Cartagena (Colombia)", "Puerto Montt (Chile)"],
+      "capacity": "9,200 toneladas/año"
+    },
+    {
+      "name": "Frutas y Hortalizas",
+      "description": "Cultivo y exportación de uvas, mangos y paltas",
+      "locations": ["Ica (Perú)"],
+      "capacity": "8,500 toneladas/año"
+    }
+  ]
 }

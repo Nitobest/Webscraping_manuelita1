@@ -8,6 +8,7 @@ import streamlit as st
 import time
 from datetime import datetime
 from typing import Dict, Any, List
+from pathlib import Path
 import json
 import logging
 
@@ -24,11 +25,21 @@ from parser import create_faq_json
 # ============================================================================
 
 st.set_page_config(
-    page_title="Manuelita Assistant",
-    page_icon="🤖",
+    page_title="Manuelita Insight | Asistente Inteligente",
+    page_icon="🌿",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Cargar CSS personalizado con colores corporativos
+def load_custom_css():
+    """Carga CSS personalizado con tema Manuelita."""
+    css_file = Path(".streamlit/custom.css")
+    if css_file.exists():
+        with open(css_file, "r", encoding="utf-8") as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+load_custom_css()
 
 # ============================================================================
 # INICIALIZACIÓN DE ESTADO
@@ -57,6 +68,12 @@ if 'chat_history' not in st.session_state:
 
 if 'json_generated' not in st.session_state:
     st.session_state.json_generated = False
+
+if 'pending_question' not in st.session_state:
+    st.session_state.pending_question = None
+
+if 'switch_to_chat' not in st.session_state:
+    st.session_state.switch_to_chat = False
 
 # ============================================================================
 # FUNCIONES AUXILIARES
@@ -138,49 +155,147 @@ def generate_faq_json() -> bool:
 # ============================================================================
 
 def page_faqs():
-    """Página de FAQs autogeneradas."""
-    st.header("❓ Preguntas Frecuentes")
+    """Página de FAQs para probar el sistema."""
+    st.markdown(
+        """
+        <div style="
+            background: linear-gradient(90deg, #00A651 0%, #008C45 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        ">
+            <h1 style="margin: 0; color: white; font-size: 2rem;">
+                🧪 Pruebas del Sistema
+            </h1>
+            <p style="margin: 0.5rem 0 0 0; color: white; opacity: 0.9;">
+                Valida cada componente del asistente inteligente
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     
-    col1, col2 = st.columns([4, 1])
+    st.info(
+        "🎯 **Objetivo:** Estas preguntas están diseñadas para probar diferentes aspectos del agente.\n\n"
+        "Haz clic en 'Probar' para ir al Chat y hacer la pregunta automáticamente."
+    )
     
+    st.divider()
+    
+    # Agrupar por tipo de prueba
+    test_types = {
+        "rag": [],
+        "structured": [],
+        "memory": [],
+        "routing": []
+    }
+    
+    for faq in SAMPLE_FAQS:
+        test_types[faq['type']].append(faq)
+    
+    # SECCIÓN 1: PRUEBA RAG
+    if test_types['rag']:
+        st.markdown("### 📚 Prueba de RAG (Retrieval-Augmented Generation)")
+        st.caption("Verifica que el sistema recupere información desde la base vectorial")
+        
+        for i, faq in enumerate(test_types['rag']):
+            with st.container():
+                col1, col2, col3 = st.columns([0.3, 3, 1])
+                with col1:
+                    st.markdown(f"### {faq['icon']}")
+                with col2:
+                    st.markdown(f"**{faq['question']}**")
+                    st.caption(faq['test_purpose'])
+                with col3:
+                    if st.button("🚀 Probar", key=f"faq_rag_{i}"):
+                        st.session_state.pending_question = faq['question']
+                        st.session_state.switch_to_chat = True
+                        st.rerun()
+        st.divider()
+    
+    # SECCIÓN 2: PRUEBA STRUCTURED
+    if test_types['structured']:
+        st.markdown("### 📊 Prueba de Herramienta Estructurada")
+        st.caption("Verifica que el router seleccione datos estructurados para preguntas directas")
+        
+        for i, faq in enumerate(test_types['structured']):
+            with st.container():
+                col1, col2, col3 = st.columns([0.3, 3, 1])
+                with col1:
+                    st.markdown(f"### {faq['icon']}")
+                with col2:
+                    st.markdown(f"**{faq['question']}**")
+                    st.caption(faq['test_purpose'])
+                with col3:
+                    if st.button("🚀 Probar", key=f"faq_structured_{i}"):
+                        st.session_state.pending_question = faq['question']
+                        st.session_state.switch_to_chat = True
+                        st.rerun()
+        st.divider()
+    
+    # SECCIÓN 3: PRUEBA MEMORIA
+    if test_types['memory']:
+        st.markdown("### 🧠 Prueba de Memoria Conversacional")
+        st.caption("Verifica que el sistema recuerde información de turnos anteriores")
+        
+        st.warning(
+            "⚠️ **Importante:** Estas preguntas deben hacerse en secuencia para probar la memoria correctamente.\n"
+            "Haz la primera, espera la respuesta, luego haz la segunda."
+        )
+        
+        for i, faq in enumerate(test_types['memory']):
+            with st.container():
+                col1, col2, col3 = st.columns([0.3, 3, 1])
+                with col1:
+                    st.markdown(f"### {faq['icon']}")
+                with col2:
+                    st.markdown(f"**{i+1}. {faq['question']}**")
+                    st.caption(faq['test_purpose'])
+                with col3:
+                    if st.button("🚀 Probar", key=f"faq_memory_{i}"):
+                        st.session_state.pending_question = faq['question']
+                        st.session_state.switch_to_chat = True
+                        st.rerun()
+        st.divider()
+    
+    # SECCIÓN 4: PRUEBA ROUTING
+    if test_types['routing']:
+        st.markdown("### 🔀 Prueba de Enrutamiento Inteligente")
+        st.caption("Verifica que el router seleccione la herramienta correcta según el contexto")
+        
+        st.warning(
+            "⚠️ **Importante:** Estas preguntas deben hacerse en secuencia para probar el enrutamiento contextual."
+        )
+        
+        for i, faq in enumerate(test_types['routing']):
+            with st.container():
+                col1, col2, col3 = st.columns([0.3, 3, 1])
+                with col1:
+                    st.markdown(f"### {faq['icon']}")
+                with col2:
+                    st.markdown(f"**{i+1}. {faq['question']}**")
+                    st.caption(faq['test_purpose'])
+                with col3:
+                    if st.button("🚀 Probar", key=f"faq_routing_{i}"):
+                        st.session_state.pending_question = faq['question']
+                        st.session_state.switch_to_chat = True
+                        st.rerun()
+        st.divider()
+    
+    # SECCIÓN ADICIONAL: Generar FAQs
+    st.markdown("### 🛠️ Herramientas")
+    col1, col2 = st.columns([3, 1])
     with col1:
-        st.subheader("Ejemplo de Consultas por Tipo")
-    
+        st.markdown("**Generar FAQs desde documentos**")
+        st.caption("Procesa los documentos markdown y crea un archivo JSON estructurado")
     with col2:
-        if st.button("🔄 Generar FAQs"):
+        if st.button("🔄 Generar", key="generate_faqs"):
             with st.spinner("Generando FAQs desde documentos..."):
                 if generate_faq_json():
                     st.success("✅ FAQs generadas exitosamente")
                     st.session_state.json_generated = True
                 else:
                     st.error("❌ Error generando FAQs")
-    
-    # Mostrar FAQs
-    for i, faq in enumerate(SAMPLE_FAQS, 1):
-        with st.container():
-            col1, col2, col3 = st.columns([0.5, 3, 1.5])
-            
-            with col1:
-                if faq['type'] == 'rag':
-                    st.write("📚")
-                elif faq['type'] == 'memory':
-                    st.write("🧠")
-                elif faq['type'] == 'structured':
-                    st.write("📊")
-                else:
-                    st.write("🔀")
-            
-            with col2:
-                st.write(f"**{faq['question']}**")
-                st.caption(faq['description'])
-            
-            with col3:
-                if st.button("Preguntar", key=f"faq_{i}"):
-                    st.session_state.user_input = faq['question']
-                    st.rerun()
-    
-    st.divider()
-    st.info("💡 Selecciona una pregunta o escribe la tuya en la ventana de Chat")
 
 # ============================================================================
 # VENTANA 2: ADMINISTRACIÓN
@@ -188,7 +303,24 @@ def page_faqs():
 
 def page_admin():
     """Página de administración."""
-    st.header("⚙️ Panel de Administración")
+    st.markdown(
+        """
+        <div style="
+            background: linear-gradient(90deg, #00A651 0%, #008C45 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        ">
+            <h1 style="margin: 0; color: white; font-size: 2rem;">
+                ⚙️ Panel de Administración
+            </h1>
+            <p style="margin: 0.5rem 0 0 0; color: white; opacity: 0.9;">
+                Configuración y monitoreo del sistema
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     
     tab1, tab2 = st.tabs(
         ["⚙️ Configuración", "🔧 Herramientas del Core"]
@@ -621,6 +753,32 @@ def page_chat():
     # Mostrar historial de la conversación actual
     turns = current_conv_memory.get_all_turns()
     
+    # MENSAJE DE BIENVENIDA (solo si no hay historial)
+    if not turns:
+        st.markdown(
+            """
+            <div style="
+                background: linear-gradient(135deg, #00A651 0%, #008C45 100%);
+                padding: 2rem;
+                border-radius: 15px;
+                margin-bottom: 2rem;
+                box-shadow: 0 4px 6px rgba(0, 166, 81, 0.1);
+            ">
+                <div style="text-align: center; color: white;">
+                    <h1 style="margin: 0; font-size: 3rem;">🌿</h1>
+                    <h2 style="margin: 0.5rem 0; color: white; font-weight: 600;">Bienvenido a Manuelita Insight</h2>
+                    <p style="margin: 0.5rem 0; font-size: 1.1rem; opacity: 0.95;">
+                        Tu asistente inteligente para conocer más de 160 años de historia
+                    </p>
+                    <p style="margin: 1rem 0 0 0; font-size: 0.95rem; opacity: 0.9;">
+                        🌱 Azúcar • ⚡ Bioenergía • 🦐 Acuicultura • 🍇 Frutas
+                    </p>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
     for turn in turns:
         with st.chat_message("user"):
             st.write(turn.user_question)
@@ -630,8 +788,13 @@ def page_chat():
             if turn.sources:
                 st.caption(f"📚 Fuentes: {', '.join(turn.sources)}")
     
-    # Input del usuario
-    user_input = st.chat_input("Escribe tu pregunta...")
+    # Verificar si hay una pregunta pendiente desde FAQs
+    if st.session_state.pending_question:
+        user_input = st.session_state.pending_question
+        st.session_state.pending_question = None  # Limpiar
+    else:
+        # Input del usuario
+        user_input = st.chat_input("Escribe tu pregunta...")
     
     if user_input:
         # Mostrar pregunta
@@ -667,16 +830,65 @@ def page_chat():
 # NAVEGACIÓN PRINCIPAL
 # ============================================================================
 
-st.sidebar.title("🏠 Navegación")
+# Navegación con estilo corporativo
+st.sidebar.markdown(
+    """
+    <div style="
+        text-align: center;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        border-bottom: 3px solid #00A651;
+    ">
+        <h2 style="
+            margin: 0;
+            color: #00A651;
+            font-size: 1.5rem;
+            font-weight: 700;
+        ">
+            🏠 Navegación
+        </h2>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# Cambiar a Chat si hay switch pendiente desde FAQs
+if st.session_state.switch_to_chat:
+    default_page = 0  # índice de Chat
+    st.session_state.switch_to_chat = False
+else:
+    default_page = 0  # Chat por defecto
+
+st.sidebar.markdown(
+    "<p style='font-weight: 600; color: #3D5A4C; margin-bottom: 0.5rem;'>Selecciona una sección:</p>",
+    unsafe_allow_html=True
+)
+
 page = st.sidebar.radio(
     "Selecciona una sección:",
-    ["💬 Chat", "⚙️ Admin", "❓ FAQs"]
+    ["💬 Chat", "⚙️ Admin", "❓ FAQs"],
+    index=default_page,
+    label_visibility="collapsed"
 )
 
 st.sidebar.divider()
-st.sidebar.info(
-    "📌 **Asistente Inteligente Manuelita**\n"
-    "Versión 1.0 - Memoria conversacional con enrutamiento RAG/Structured"
+st.sidebar.markdown(
+    """
+    <div style="
+        background: linear-gradient(135deg, #00A651 0%, #008C45 100%);
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+    ">
+        <h3 style="margin: 0; color: white; font-size: 1.2rem;">🌿 Manuelita</h3>
+        <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; opacity: 0.95;">
+            <strong>Asistente Inteligente</strong><br>
+            160+ años generando valor sostenible
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
 )
 
 # Ejecutar página

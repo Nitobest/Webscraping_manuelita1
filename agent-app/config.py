@@ -200,27 +200,49 @@ class AppConfig:
 config = AppConfig()
 
 
-# Ejemplo de FAQs autogeneradas (estructura)
+# FAQs optimizadas para probar el sistema
 SAMPLE_FAQS = [
     {
         "type": "rag",
+        "icon": "📚",
         "question": "¿Cuál es la historia de Manuelita?",
-        "description": "Pregunta sobre los orígenes y evolución de la empresa"
-    },
-    {
-        "type": "memory",
-        "question": "¿Cuántas sedes tienen en total?",
-        "description": "Pregunta de seguimiento que requiere contexto previo"
+        "description": "Prueba de RAG: Pregunta general respondida desde documentos",
+        "test_purpose": "Verifica que el sistema recupere información de la base vectorial"
     },
     {
         "type": "structured",
-        "question": "¿Cuál es el número de teléfono de contacto?",
-        "description": "Pregunta de dato concreto"
+        "icon": "📊",
+        "question": "¿Cuál es el horario de atención?",
+        "description": "Prueba de Herramienta Estructurada: Dato directo de FAQ",
+        "test_purpose": "Verifica que el router seleccione la herramienta estructurada"
+    },
+    {
+        "type": "memory",
+        "icon": "🧠",
+        "question": "Me llamo Esteban, ¿me puedes ayudar?",
+        "description": "Prueba de Memoria: Presentación personal",
+        "test_purpose": "Verifica que el sistema almacene información personal"
+    },
+    {
+        "type": "memory",
+        "icon": "🧠",
+        "question": "¿Recuerdas mi nombre?",
+        "description": "Prueba de Memoria: Pregunta de seguimiento",
+        "test_purpose": "Verifica que el sistema recuerde información de turnos anteriores"
     },
     {
         "type": "routing",
-        "question": "¿Dónde puedo comprar sus productos?",
-        "description": "Pregunta que puede requerir múltiples herramientas"
+        "icon": "🔀",
+        "question": "¿Qué productos de azúcar ofrecen?",
+        "description": "Prueba de Enrutamiento: Combina RAG + contexto",
+        "test_purpose": "Verifica que el router seleccione RAG para preguntas específicas"
+    },
+    {
+        "type": "routing",
+        "icon": "🔀",
+        "question": "¿Y cuál es el precio?",
+        "description": "Prueba de Enrutamiento: Pregunta contextual de seguimiento",
+        "test_purpose": "Verifica que el sistema use memoria para entender contexto"
     }
 ]
 

@@ -1,8 +1,9 @@
 [theme]
-primaryColor = "#FF6B35"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F0F2F6"
-textColor = "#262730"
+# Colores corporativos Manuelita
+primaryColor = "#00A651"  # Verde Manuelita
+backgroundColor = "#FFFFFF"  # Blanco
+secondaryBackgroundColor = "#F8F9FA"  # Gris muy claro
+textColor = "#3D5A4C"  # Gris verdoso corporativo
 font = "sans serif"
 
 [server]
