@@ -55,8 +55,8 @@ class LLMConfig:
 class StreamingConfig:
     """Configuración del streaming."""
     enabled: bool = True
-    speed_ms: int = 50  # milisegundos por carácter
-    icon: str = "🐢"  # Ícono por defecto
+    speed_ms: int = 10  # milisegundos por carácter
+    icon: str = "✨"  # Ícono por defecto
     
     # Iconos disponibles
     ICONS = {
@@ -92,6 +92,20 @@ class UIConfig:
     chat_height: int = 600
 
 
+@dataclass
+class LangSmithConfig:
+    """Configuración de LangSmith (Observabilidad)."""
+    enabled: bool = False
+    api_key: str = os.getenv("LANGCHAIN_API_KEY", "")
+    project_name: str = os.getenv("LANGCHAIN_PROJECT", "manuelita-agent")
+    endpoint: str = os.getenv("LANGCHAIN_ENDPOINT", "https://api.smith.langchain.com")
+    
+    def __post_init__(self):
+        """Verifica si está habilitado basado en variables de entorno."""
+        tracing = os.getenv("LANGCHAIN_TRACING_V2", "false").lower()
+        self.enabled = tracing in ["true", "1", "yes"]
+
+
 class AppConfig:
     """Configuración global de la aplicación."""
     
@@ -100,6 +114,7 @@ class AppConfig:
         self.streaming = StreamingConfig()
         self.memory = MemoryConfig()
         self.ui = UIConfig()
+        self.langsmith = LangSmithConfig()
         self.data_dir = "../data/raw/processed"
         self.vectordb_dir = "./vectordb"
         self.structured_data_file = "tools/data/faq_structured.json"
@@ -169,6 +184,12 @@ class AppConfig:
                 'faq_max_questions': self.ui.faq_max_questions,
                 'sidebar_width': self.ui.sidebar_width,
                 'chat_height': self.ui.chat_height
+            },
+            'langsmith': {
+                'enabled': self.langsmith.enabled,
+                'project_name': self.langsmith.project_name,
+                'api_key_configured': bool(self.langsmith.api_key),
+                'endpoint': self.langsmith.endpoint
             }
         }
 

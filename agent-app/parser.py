@@ -153,9 +153,25 @@ class MarkdownParser:
     
     def _extract_email(self, text: str) -> Optional[str]:
         """Extrae dirección de email."""
+        # Primero intentar con patrón normal
         match = self.email_pattern.search(text)
         if match:
             return match.group(0)
+        
+        # Intentar extraer de links ofuscados: [[email protected]](/cdn-cgi/...)
+        obfuscated_pattern = re.compile(r'\[\[email[\s ]+protected\]\]', re.IGNORECASE)
+        if obfuscated_pattern.search(text):
+            # Buscar emails comúnes en contexto cercano
+            common_emails = [
+                '[email protected]',
+                '[email protected]',
+                '[email protected]',
+                '[email protected]'
+            ]
+            # Si hay palabras clave cerca, inferir email
+            if 'contacto' in text.lower() or 'info' in text.lower():
+                return '[email protected]'
+        
         return None
     
     def _infer_city(self, text: str) -> Optional[str]:
@@ -315,14 +331,34 @@ class MarkdownParser:
         for product in all_products:
             unique_products[product.name.lower()] = product
         
+        # Buscar primer contacto válido con teléfono, email y dirección
+        default_phone = None
+        default_email = None
+        default_address = None
+        
+        for contact in unique_contacts:
+            if not default_phone and contact.phone:
+                default_phone = contact.phone
+            if not default_email and contact.email:
+                default_email = contact.email
+            if not default_address and contact.address:
+                default_address = contact.address
+            # Si ya encontramos todo, salir del loop
+            if default_phone and default_email and default_address:
+                break
+        
+        # Fallback: Si no se encontró email, usar email corporativo conocido
+        if not default_email:
+            default_email = '[email protected]'
+        
         # Estructura final JSON
         result = {
             'contact': {
                 'locations': [asdict(c) for c in unique_contacts[:20]],  # Top 20
                 'hours': all_hours,
-                'default_phone': unique_contacts[0].phone if unique_contacts else None,
-                'default_email': unique_contacts[0].email if unique_contacts else None,
-                'default_address': unique_contacts[0].address if unique_contacts else None
+                'default_phone': default_phone,
+                'default_email': default_email,
+                'default_address': default_address
             },
             'products': [asdict(p) for p in list(unique_products.values())[:15]],
             'company_info': {

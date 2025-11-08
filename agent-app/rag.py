@@ -109,6 +109,9 @@ class RAGSystem:
             self.splits = []
             for doc in self.documents:
                 chunks = splitter.split_text(doc.page_content)
+                # Preservar metadata (source) del documento original
+                for chunk in chunks:
+                    chunk.metadata['source'] = doc.metadata.get('source', 'Unknown')
                 self.splits.extend(chunks)
             
             logger.info(f"✅ {len(self.splits)} chunks creados")

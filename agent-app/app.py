@@ -63,21 +63,25 @@ if 'json_generated' not in st.session_state:
 # ============================================================================
 
 def stream_response(text: str, speed_ms: int = 50) -> None:
-    """Simula streaming de respuesta carácter por carácter.
+    """Simula streaming de respuesta carácter por carácter con icono generador.
     
     Args:
         text: Texto a mostrar
-        speed_ms: Velocidad en ms (10=rápido, 200=lento)
+        speed_ms: Velocidad en ms por carácter (10=rápido, 200=lento)
     """
-    # Invertir: 10ms → delay bajo (rápido), 200ms → delay alto (lento)
     delay_sec = speed_ms / 1000.0
     placeholder = st.empty()
     streamed_text = ""
     
+    # Streaming con icono como "cursor" generador
     for char in text:
         streamed_text += char
-        placeholder.markdown(f"{config.streaming.icon} {streamed_text}")
+        # Mostrar texto + icono al final (como cursor)
+        placeholder.markdown(f"{streamed_text} {config.streaming.icon}")
         time.sleep(delay_sec)
+    
+    # Resultado final: solo el texto, sin icono
+    placeholder.markdown(streamed_text)
 
 def process_user_input(question: str, memory_context: str = "") -> Dict[str, Any]:
     """Procesa entrada del usuario.

@@ -16,7 +16,6 @@ from tools.structured_tool import StructuredDataTool, is_structured_question
 from memory import ConversationMemory
 from config import config
 
-
 class ManuelitaAgent:
     """Agente inteligente con enrutamiento RAG/Structured."""
     
@@ -239,7 +238,7 @@ class ManuelitaAgent:
                 'sources': [],
                 'success': False
             }
-    
+
     def _generate_response(self, question: str, context: str, memory_context: str,
                           temperature: float, max_tokens: int) -> str:
         """Genera respuesta con el LLM incluyendo historial de conversación."""

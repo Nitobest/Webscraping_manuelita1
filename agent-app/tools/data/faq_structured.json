@@ -81,8 +81,8 @@
       "nocturno": "** (602) 6878900 Ext. 1555, o a los celulares 316 8329655 o 315 4944432",
       "error": "no such group"
     },
-    "default_phone": null,
-    "default_email": null,
+    "default_phone": "608-661-1666",
+    "default_email": "[email protected]",
     "default_address": "Km 7 via Palmira - El Cerrito"
   },
   "products": [

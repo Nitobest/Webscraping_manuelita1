@@ -5,4 +5,3 @@ agent_app.egg-info/SOURCES.txt
 agent_app.egg-info/dependency_links.txt
 agent_app.egg-info/requires.txt
 agent_app.egg-info/top_level.txt
-tests/test_agent.py
